@@ -15,7 +15,8 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
 
 ## Project Description
- > *  Mythikins is a text based RPG where we capture and train mythical creatures to build up a team to defeat the four Mythic Masters. We were inspired by the classic Pokémon games growing up, and we wanted to create our own take on the genre; combining elements from both Pokémon and Yugioh.
+ > Mythikins is a text based RPG where we capture and train mythical creatures to build up a team to defeat the four Mythic Masters. We were inspired by the classic Pokémon games growing up, and we wanted to create our own take on the genre; combining elements from both Pokémon and Yugioh.
+ > 
  >  We will be using: 
  > * C++
  > * Visual Studio Code
