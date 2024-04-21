@@ -18,10 +18,10 @@
  > Mythikins is a text based RPG where we capture and train mythical creatures to build up a team to defeat the four Mythic Masters. We were inspired by the classic Pokémon games growing up, and we wanted to create our own take on the genre; combining elements from both Pokémon and Yugioh.
  > 
  >  We will be using: 
- > * C++
- > * Visual Studio Code
- > * Git
- > * Github
+ > * Programming Language: C++ 
+ > * IDE: Visual Studio Code
+ > * Version Control: Git
+ > * Repository: Github
 
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
