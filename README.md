@@ -23,7 +23,23 @@
  > * Version Control: Git
  > * Repository: Github
 
- > Input: 
+ > Input: Players will interact with the game using text commands using a menu
+ > * Navigating through map areas 
+ > * Using items
+ > * Checking their stats
+ > * Organizing their inventory
+
+ > In battle, the user will be prompted with four options to attack, items, flee, and swap.
+
+ > Output:  The output will be a linear narrative progressing as the user defeats the academy masters. At every step, the user will be prompted with a menu that presents their traveling options.
+>
+> In battle, the user will be presented with four options to attack, items, swap, and flee.
+ > * Attack will output the possible attacks that the user can use, each with different effects.
+ > * Items will output a list of possible items that can be used.
+ > * Flee will output success or failure.
+ > * Swap will prompt for which Mythikin to swap with.
+
+
 
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
