@@ -15,7 +15,8 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
 
 ## Project Description
- > Mythikins is a text-based RPG adventure inspired by the classic Pokémon game that we all loved growing up; we wanted to create our own take on the genre.    Players can capture and train Mythikins of 3 types: aqua, magma, and flora, each with elemental moves. The player can move between areas, such as the starting  village, routes (filled with Mythikins & trainers), cities each with an academy, store, and Mythikin center. The player can battle other trainers, and academy-masters to get a medallion. After receiving three badges you can fight the Four Myth Masters to become the ultimate Mythikin Master.
+ > Mythikins is a text-based RPG adventure inspired by the classic Pokémon game we all loved growing up; we wanted to create a unique take on the genre. Players can capture and train Mythikins of 3 types: aqua, magma, and flora, each with elemental moves. The player can move between areas, such as the starting village, routes (filled with Mythikins & trainers), and cities each with an academy, store, and Mythikin center. The player can battle other trainers, and academy-masters to earn medallions. After receiving three medallions you can fight the Four Myth Masters to become the ultimate master.
+ >
  > 
  >  We will be using: 
  > * Programming Language: C++ 
