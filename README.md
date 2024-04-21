@@ -6,8 +6,7 @@
  > \<[Axel Perez](https://github.com/AxelPere)\>
  >
 ## Project Description
- > Mythikins is a text-based RPG adventure inspired by the classic game Pokemon with our unique take on the genre. Players can capture and   
- train Mythikins of 3 types: aqua, magma, and flora, each with elemental moves. The player can move between areas, such as the starting 
+ > Mythikins is a text-based RPG adventure inspired by the classic game Pokemon with our unique take on the genre. Players can capture and train Mythikins of 3 types: aqua, magma, and flora, each with elemental moves. The player can move between areas, such as the starting 
  village, routes (filled with Mythikins & trainers), and cities each with an academy, store, and Mythikin center. The player can battle other 
  trainers, and academy-masters to earn medallions. After receiving three medallions you can fight the Four Myth Masters to become the ultimate 
  master.
