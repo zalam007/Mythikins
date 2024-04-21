@@ -1,7 +1,7 @@
 # \<Mythikins: The PRG Adventure\>
  
  > Authors: \<[Zami Alam](https://github.com/zalam007)\>
- > Authors: \<[Zami Alam](https://github.com/zalam007)\>
+ > \<[Jesse Nguyen](https://github.com/madjick1)\>
  > Authors: \<[Zami Alam](https://github.com/zalam007)\>
  > Authors: \<[Zami Alam](https://github.com/zalam007)\>
 
