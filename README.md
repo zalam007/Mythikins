@@ -23,6 +23,8 @@
  > * Version Control: Git
  > * Repository: Github
 
+ > Input: 
+
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
