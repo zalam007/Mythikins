@@ -4,7 +4,7 @@
  > \<[Jesse Nguyen](https://github.com/madjick1)\>
  > \<[Dylan Wong](https://github.com/dylanwong6605)\>
  > \<[Axel Perez](https://github.com/AxelPere)\>
-
+ >
 ## Project Description
  > Mythikins is a text-based RPG adventure inspired by the classic game Pokemon with our unique take on the genre. Players can capture and   
  train Mythikins of 3 types: aqua, magma, and flora, each with elemental moves. The player can move between areas, such as the starting 
@@ -24,7 +24,6 @@
  > * Using items
  > * Checking their stats
  > * Organizing their inventory
-
  > In battle, the user will be prompted with four options to attack, items, flee, and swap.
 
  > Output:  The output will be a linear narrative progressing as the user defeats the academy masters. At every step, the user will be prompted with a menu that presents their traveling options.
