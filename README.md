@@ -33,9 +33,9 @@
  > * Flee will output success or failure.
  > * Swap will prompt for which Mythikin to swap with.
 
- > ## UML
+ ## UML
  > * https://drive.google.com/file/d/1NnlT24Q35t8LOOYmB9zHkCZ0mVkx7mtg/view?usp=sharing
- > ## Layout + Navigation Diagram
+ ## Layout + Navigation Diagram
  > * https://drive.google.com/file/d/1a7bPom0_qHQpSoHAy5gg0hrQ4rfgjSmB/view?usp=sharing
  >
  > ## Phase II
