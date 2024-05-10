@@ -15,6 +15,8 @@ public:
     Attack(string name, string type, int power, int accuracy, int MM)
         : name(name), type(type), power(power), accuracy(accuracy), maxMM(MM), MM(MM) {}
 
+    Attack() : name("bitch slap"), type("normal"), power(10), accuracy(100), maxMM(20), MM(20) {}
+
     int damage(const Mythikin& otherMythikin) {
         return 0; // Placeholder return value
     }
