@@ -1,17 +1,18 @@
 #pragma once
 
 #include <string>
-#include "mythikin.h"
+#include "Mythikin.h"
 using namespace std;
 
-class Attack {
+class Attack
+{
 private:
     string name;
     string type;
     int power;
     int accuracy;
-    int maxMM;         // max moves
-    int MM;            // mythican moves left
+    int maxMM; // max moves
+    int MM;    // mythican moves left
 
 public:
     Attack(string name, string type, int power, int accuracy, int MM)
@@ -28,8 +29,8 @@ public:
     int getMM() const { return MM; }
 
     // Setters
-    void setName(const string& name) { this->name = name; }
-    void setType(const string& type) { this->type = type; }
+    void setName(const string &name) { this->name = name; }
+    void setType(const string &type) { this->type = type; }
     void setPower(int power) { this->power = power; }
     void setAccuracy(int accuracy) { this->accuracy = accuracy; }
     void setMM(int MM) { this->MM = MM; }
