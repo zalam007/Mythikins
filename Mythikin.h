@@ -43,6 +43,8 @@ public:
     // Setters
     void setName(string name) { this->name = name; }
     void setType(string type) { this->type = type; }
+    void setLevel(int level) { this->level = level; }
+    void setSpeed(int speed) { this->speed = speed; }
     void setHP(int HP) { this->HP = HP; }
     void setAttackMultiplier(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
