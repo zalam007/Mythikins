@@ -2,12 +2,12 @@
 
 #include <string>
 #include <vector>
-#include "attack.h"
+#include "Attack.h"
 using namespace std;
 
-
 // Mythikin creature class
-class Mythikin {
+class Mythikin
+{
 private:
     string name;
     string type;
@@ -19,7 +19,7 @@ private:
     vector<Attack> attacks;
 
 public:
-    //Constructors:
+    // Constructors:
     Mythikin(string name, string type, int level, int speed, int HP, double attackX)
         : name(name), type(type), level(level), speed(speed), maxHP(HP), HP(HP), attackX(attackX) {}
 
@@ -33,6 +33,8 @@ public:
     // Getters
     string getName() { return name; }
     string getType() { return type; }
+    int getLevel() { return level; }
+    int getSpeed() { return speed; }
     int getMaxHP() { return maxHP; }
     int getHP() { return HP; }
     int getAttackMultiplier() { return attackX; }
@@ -41,7 +43,14 @@ public:
     // Setters
     void setName(string name) { this->name = name; }
     void setType(string type) { this->type = type; }
+    void setLevel(int level) { this->level = level; }
+    void setSpeed(int speed) { this->speed = speed; }
     void setHP(int HP) { this->HP = HP; }
     void setAttackMultiplier(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
+
+    bool knocked()
+    {
+        return getHP() <= 0;
+    }
 };
