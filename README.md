@@ -38,7 +38,7 @@
  > * https://drive.google.com/file/d/1NnlT24Q35t8LOOYmB9zHkCZ0mVkx7mtg/view?usp=sharing
 
  ## Layout + Navigation Diagram
- ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/146377680/619895a9-1ff2-44bf-a39c-5419a13575f3)
+![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/146377680/3b584628-510a-4e18-966a-ce61cabd387f)
  > * https://drive.google.com/file/d/1a7bPom0_qHQpSoHAy5gg0hrQ4rfgjSmB/view?usp=sharing
  >
  > ## Phase II
