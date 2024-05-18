@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+// Attacks that Mythikin can use
 class Attack
 {
 private:
