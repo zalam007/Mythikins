@@ -1,7 +1,17 @@
 #include <iostream>
+#include "Mythikin.h"
+#include "Attack.h"
+#include "Mythidex.cpp"
 using namespace std;
 
 int main() {
-  cout << "Welcome Mythikins: The PRG Adventure!" << endl;
+
+    Mythidex dex;
+
+    // Read Mythikins from file
+    dex.readMythikinsFromFile("mythikins.txt");
+
+    dex.printAllMythikinNames();
+
   return 0;
 }
