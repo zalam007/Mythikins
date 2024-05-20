@@ -16,13 +16,16 @@ public:
     Mythidex();
 
     // Read Mythikins from file (mythikins.txt) and adds them to allMythikins vector
+    // File format: name, wild, type, level, speed, HP, attackX
     void readMythikinsFromFile(const string& filename);
+    
     // Read Moves from file (moves.txt) and adds them to allMoves vector
+    // File format: name, type, power, accuracy, MM
     void readMovesFromFile(const string& filename);
 
-    vector<Mythikin>& getAllMythikins();
-    void printAllMythikinNames() const;
+    vector<Mythikin>& getAllMythikins();    // Returns allMythikins vector
+    void printAllMythikinNames() const;     // Prints all Mythikin names
 
-    vector<Attack>& getAllMoves();
-    void printAllMoves() const;
+    vector<Attack>& getAllMoves();  // Returns allMoves vector
+    void printAllMoves() const;     // Prints all Moves names
 };

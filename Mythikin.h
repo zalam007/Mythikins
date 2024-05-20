@@ -36,8 +36,7 @@ public:
     Mythikin() : name("Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
   
     //Copy Mythikin Constructor
-    Mythikin(Mythikin& other) : name(other.getName()), type(other.getType()), level(other.getLevel()), speed(other.getSpeed()), maxHP(other.getMaxHP()), HP(other.getHP()), attackX(other.getAttackMultiplier()) {}
-
+    Mythikin(const Mythikin& other) : name(other.name), wild(other.wild), type(other.type), level(other.level), speed(other.speed), maxHP(other.maxHP), HP(other.HP), attackX(other.attackX), attacks(other.attacks) {}
 
     bool isKnocked() const { return HP <= 0; }
     // Getters

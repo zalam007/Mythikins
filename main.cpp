@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Mythikin.h"
 #include "Attack.h"
-#include "Mythidex.cpp"
+#include "Mythidex.h"
 using namespace std;
 
 int main() {
