@@ -40,7 +40,6 @@ public:
 
 
     bool isKnocked() const { return HP <= 0; }
-  
     // Getters
     string getName() const { return name; }
     bool isWild() const { return wild; }
@@ -61,12 +60,8 @@ public:
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
     void setHP(int HP) {
-        if(HP >= maxHP) {
-            this->HP = maxHP;
-        }
-        else {
-            this->HP = HP;
-        }
+        if(HP >= maxHP) { this->HP = maxHP; }
+        else { this->HP = HP; }
     }
     void setAttackMultiplier(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
