@@ -30,11 +30,16 @@ public:
     // Default constructor
     Mythikin() : name("mysteryMythikin"), type("normal"), level(1), speed(90), maxHP(100), HP(100), attackX(1) {}
 
+    //Copy Mythikin Constructor
+    Mythikin(Mythikin& other) : name(other.getName()), type(other.getType()), level(other.getLevel()), speed(other.getSpeed()), maxHP(other.getMaxHP()), HP(other.getHP()), attackX(other.getAttackMultiplier()) {}
+
     // Getters
     string getName() { return name; }
     string getType() { return type; }
     int getMaxHP() { return maxHP; }
     int getHP() { return HP; }
+    int getLevel() { return level; }
+    int getSpeed() { return speed; }
     int getAttackMultiplier() { return attackX; }
     vector<Attack> getAttacks() { return attacks; }
 
