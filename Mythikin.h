@@ -47,7 +47,7 @@ public:
     int getSpeed() const { return speed; }
     int getMaxHP() const { return maxHP; }
     int getHP() const { return HP; }
-    int getAttackMultiplier() const { return attackX; }
+    int getAttackX() const { return attackX; }
     vector<Attack> getAttacks() const { return attacks; }
 
     // Setters
@@ -62,6 +62,6 @@ public:
         if(HP >= maxHP) { this->HP = maxHP; }
         else { this->HP = HP; }
     }
-    void setAttackMultiplier(int attackX) { this->attackX = attackX; }
+    void setAttackX(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
 };
