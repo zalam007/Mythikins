@@ -55,7 +55,14 @@ public:
     void setLevel(int level) { this->level = level; }
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
-    void setHP(int HP) { this->HP = HP; }
+    void setHP(int HP) {
+        if(HP >= maxHP) {
+            this->HP = maxHP;
+        }
+        else {
+            this->HP = HP;
+        }
+    }
     void setAttackMultiplier(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
 };
