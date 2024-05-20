@@ -13,6 +13,8 @@ public:
     // default cube
     Mythicube() : Item("Regular Mythicube", 1, 1), catchRate(1), capturedMythikin(nullptr) {}
 
+    ~Mythicube(){delete capturedMythikin;}
+
     unsigned getCatchRate() const { return catchRate; }
 
     Mythikin& getMythikin() const { 
