@@ -4,14 +4,17 @@
 
 class Potion : protected Item
 {
-    unsigned healPower;
+    double healPowerPercent;
 
 public:
-    Potion(string name, unsigned quant, unsigned cap, int healPower) : Item(name, quant, cap), healPower(healPower) {}
+    Potion(string name, unsigned quant, unsigned cap, double healPower) : Item(name, quant, cap), healPowerPercent(healPower) {}
 
-    unsigned getHealPower() const { return healPower; }
+    //default
+    Potion() : Item("Potion", 1, 1), healPowerPercent(25.0) {}
 
-    void changeHealPower(int newHealPower) { healPower = newHealPower; }
+    unsigned getHealPowerPercent() const { return healPowerPercent; }
+
+    void changeHealPowerPercent(int newHealPower) { healPowerPercent = newHealPower; }
 
     void use(Mythikin &);
 };
