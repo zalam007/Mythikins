@@ -1,23 +1,23 @@
 #pragma once
-
 #include <string>
-#include "mythikin.h"
 using namespace std;
 
-class Attack {
+// Attacks that Mythikin can use
+class Attack
+{
 private:
     string name;
     string type;
     int power;
     int accuracy;
-    int maxMM;         // max moves
-    int MM;            // mythican moves left
+    int maxMM; // max moves
+    int MM;    // mythican moves left
 
 public:
     Attack(string name, string type, int power, int accuracy, int MM)
         : name(name), type(type), power(power), accuracy(accuracy), maxMM(MM), MM(MM) {}
 
-    Attack() : name("nibble"), type("normal"), power(5), accuracy(100), maxMM(20), MM(20) {}
+    Attack() : name("nibble"), type("normal"), power(5), accuracy(80), maxMM(20), MM(20) {}
 
     // Getters
     string getName() const { return name; }
@@ -28,8 +28,8 @@ public:
     int getMM() const { return MM; }
 
     // Setters
-    void setName(const string& name) { this->name = name; }
-    void setType(const string& type) { this->type = type; }
+    void setName(const string &name) { this->name = name; }
+    void setType(const string &type) { this->type = type; }
     void setPower(int power) { this->power = power; }
     void setAccuracy(int accuracy) { this->accuracy = accuracy; }
     void setMM(int MM) { this->MM = MM; }
