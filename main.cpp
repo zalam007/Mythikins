@@ -1,17 +1,30 @@
 #include <iostream>
-#include "Mythikin.h"
-#include "Attack.h"
-#include "Mythidex.h"
+#include "Battle.h" // includes Mythikin.h & Attack.h
+#include "Mythidex.h" //
 using namespace std;
+
+void askForName() {
+  string name;
+  string confirm;
+  while (true) {
+    cout << "Please enter your name: ";
+    getline(cin, name);
+    cout << "You're name is " << name << ". Is this correct? (yes/no): ";
+    getline(cin, confirm);
+    if (confirm == "yes") { break; }
+  }
+  cout << "Welcome, " << name << "!\n";
+}
 
 int main() {
 
-    Mythidex dex;
+  // Create Mythidex, Read Mythikins & Moves from files
+  Mythidex mythidex;
+  mythidex.readMythikinsFromFile("mythikins.txt");
+  mythidex.readMovesFromFile("moves.txt");
 
-    // Read Mythikins from file
-    dex.readMythikinsFromFile("mythikins.txt");
+  askForName();
 
-    dex.printAllMythikinNames();
 
   return 0;
 }
