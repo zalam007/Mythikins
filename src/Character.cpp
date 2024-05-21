@@ -16,10 +16,14 @@ void Character::removeMythikin(const string& name) {
   //Does nothing if name not found
 }
 
-void Character::useItem(Item* itemBeingUsed) { //Feel like it'd be better to use the name of the item here
+void Character::useItem(Item* itemBeingUsed, const string& mythikinName) { //Feel like it'd be better to use the name of the item here
   for (unsigned i = 0; i < items.size(); i++) {
     if (items.at(i)->getName() == itemBeingUsed->getName()) { //Check if name of param matches name in inventory
-      //items.at(i)->use();   //use function requires a mythikin param, but idk which to call on
+      for (unsigned i = 0; i < team.size(); i++) { //Searches team for the right mythikin the item will be used on
+        if (team.at(i).getName() == mythikinName) {
+          items.at(i)->use(team.at(i));
+        }
+      }
       items.at(i)->changeCapacity(items.at(i)->getCapacity() - 1); //Reduce quantity by 1
       if (items.at(i)->getQuantity() == 0) { //If quantity is zero, delete it from inventory
         items.erase(items.begin() + i);
