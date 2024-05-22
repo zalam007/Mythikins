@@ -1,3 +1,3 @@
-Blazehoof false fire 1 90 100 1
-Mythikin2 false Type2 15 25 35 2.0
-Mythikin3 true Type3 20 30 40 2.5
+Blazehoof false fire 1 70 100 1.0
+Infernocolt false fire 2 80 110 1.0
+Magmamane false fire 2 90 120 1.0

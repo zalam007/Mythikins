@@ -36,11 +36,9 @@ public:
     Mythikin() : name("Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
   
     //Copy Mythikin Constructor
-    Mythikin(Mythikin& other) : name(other.getName()), type(other.getType()), level(other.getLevel()), speed(other.getSpeed()), maxHP(other.getMaxHP()), HP(other.getHP()), attackX(other.getAttackMultiplier()) {}
-
+    Mythikin(const Mythikin& other) : name(other.name), wild(other.wild), type(other.type), level(other.level), speed(other.speed), maxHP(other.maxHP), HP(other.HP), attackX(other.attackX), attacks(other.attacks) {}
 
     bool isKnocked() const { return HP <= 0; }
-  
     // Getters
     string getName() const { return name; }
     bool isWild() const { return wild; }
@@ -49,7 +47,7 @@ public:
     int getSpeed() const { return speed; }
     int getMaxHP() const { return maxHP; }
     int getHP() const { return HP; }
-    int getAttackMultiplier() const { return attackX; }
+    int getAttackX() const { return attackX; }
     vector<Attack> getAttacks() const { return attacks; }
 
     // Setters
@@ -61,13 +59,9 @@ public:
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
     void setHP(int HP) {
-        if(HP >= maxHP) {
-            this->HP = maxHP;
-        }
-        else {
-            this->HP = HP;
-        }
+        if(HP >= maxHP) { this->HP = maxHP; }
+        else { this->HP = HP; }
     }
-    void setAttackMultiplier(int attackX) { this->attackX = attackX; }
+    void setAttackX(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
 };

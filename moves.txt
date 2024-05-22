@@ -1,3 +1,3 @@
-Move1 Type1 10 90 5
-Move2 Type2 15 85 10
-Move3 Type3 20 80 15
+Stomp normal 10 90 10
+Hoof-Spark fire 15 90 10
+Flame-Charge fire 20 90 15
