@@ -24,7 +24,6 @@ void Character::useItem(Item* itemBeingUsed, const string& mythikinName) { //Fee
           items.at(i)->use(team.at(i));
         }
       }
-      items.at(i)->changeCapacity(items.at(i)->getCapacity() - 1); //Reduce quantity by 1
       if (items.at(i)->getQuantity() == 0) { //If quantity is zero, delete it from inventory
         items.erase(items.begin() + i);
       }

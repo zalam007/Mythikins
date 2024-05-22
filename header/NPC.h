@@ -23,7 +23,7 @@ class NPC : public Character {
 
     
     const string& talk(); //Changed this to return string, made more sense
-    void useItems();
+    // void useItems(); TODO: Add later if time
 
     const vector<string>& getDialogue() {return dialogue;}
 
