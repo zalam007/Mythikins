@@ -31,7 +31,7 @@ class Character {
     void removeCoins(int amnt) { mythicoins -= amnt; }
 
     void setItems(const vector<Item*> newItems) {items = newItems;}
-    void useItem(const string&, const string&);
+    void useItem(const string&, Mythikin&);
 
 
 };
