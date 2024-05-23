@@ -13,7 +13,7 @@ class Team {
   public:
     int getSize() const { return teamSize; }    // Returns the current size of the team
     int getMaxSize() const { return MAX_SIZE; } 
-    Mythikin& getSlot(int index); // Returns a reference to the Mythikin at the given index
+    Mythikin& getSlot(int index);   // Returns a reference to the Mythikin at the given index
 
     void swapSlots(int slot1, int slot2); // Swaps the Mythikins at the given indices
 
