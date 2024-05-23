@@ -14,7 +14,7 @@ private:
   Location currentLocation;
 
 public:
-  Player(const string &name = "No Name", const Location &currentLocation = Location(), const vector<Mythikin> &team = vector<Mythikin>(), const vector<Item*> &items = vector<Item*>(), int mythicoins = 0) {
+  Player(const string &name = "No Name", const Location &currentLocation = Location(), Team team = Team(), const vector<Item*> &items = vector<Item*>(), int mythicoins = 0) {
     Character::name = name;
     Character::team = team;
     Character::items = items;
@@ -26,7 +26,7 @@ public:
 
   const string &getName() const { return Character::name; }
   const Location &getLocation() const { return currentLocation; }
-  const vector<Mythikin> &getTeam() const { return Character::team; }
+  const Team &getTeam() const { return Character::team; }
   const vector<Item*> &getInventory() const { return Character::items; }
 
 
