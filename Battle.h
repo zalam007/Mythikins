@@ -4,25 +4,23 @@
 #include <cstdlib>
 #include <ctime>
 #include "Mythikin.h"
+#include "header/Team.h"
 
 class Battle
 {
 public:
-    Battle() {
-        // Initialize the random seed
-        srand(static_cast<unsigned>(time(0)));
-    }
+    Battle() { srand(static_cast<unsigned>(time(0))); } // Initialize the random seed
 
-    void stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
-        // Check if the move has MM left
+    // Simulate a battle round where the player attacks the NPC
+    void stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) 
+    {
+        // Check if the attacker move has any moves left
         if (move.getMM() <= 0) {
-            // If no moves left, do nothing
-            cout << "No moves left for " << attacker.getName() << endl;
+            cout << "No moves left for " << attacker.getName() << endl; // If no moves left, do nothing
             return;
         }
 
-        // Decrement the MM of the move
-        move.setMM(move.getMM() - 1);
+        move.setMM(move.getMM() - 1);   // Decrement the MM of the move
 
         // Check the accuracy of the move
         int chance = rand() % 100;
@@ -37,18 +35,59 @@ public:
 
         // Calculate the damage
         int damage = static_cast<int>(move.getPower() * typeAdvantage);
-    //NOTE: I THINK I CAN REMOVE ATTACKMULTIPLER
 
         // Reduce the defender's HP
         defender.setHP(defender.getHP() - damage);
     }
 
+    // Simulate a battle round where the NPC attacks the player back
+    void AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
+        // Get the NPC's available attacks
+        vector<Attack> availableAttacks = npcAttacker.getAttacks();
+        if (availableAttacks.empty()) {
+            cout << npcAttacker.getName() << " has no moves left!" << endl;
+            return;
+        }
+
+        // Randomly select one of the attacks
+        int moveIndex = rand() % availableAttacks.size();
+        Attack& move = availableAttacks[moveIndex];
+
+        // Check if the move has MM left
+        if (move.getMM() <= 0) {
+            cout << move.getName() << " has no moves left!" << endl;
+            return;
+        }
+
+        // Decrement the MM of the move
+        move.setMM(move.getMM() - 1);
+
+        // Check the accuracy of the move
+        int chance = rand() % 100;
+        if (chance >= move.getAccuracy()) {
+            cout << npcAttacker.getName() << "'s attack missed!" << endl;
+            return;
+        }
+
+        // Determine type advantage multiplier
+        double typeAdvantage = getTypeAdvantage(npcAttacker.getType(), playerDefender.getType());
+
+        // Calculate the damage
+        int damage = static_cast<int>(move.getPower() * typeAdvantage);
+
+        // Reduce the player's HP
+        playerDefender.setHP(playerDefender.getHP() - damage);
+        cout << npcAttacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
+    }
+
+
 private:
+    // Returns the type advantage attack multiplier
     double getTypeAdvantage(const string& attackerType, const string& defenderType) {
         if ((attackerType == "fire" && defenderType == "grass") ||
             (attackerType == "grass" && defenderType == "water") ||
             (attackerType == "water" && defenderType == "fire")) {
-            return 1.2;
+            return 1.1;
         }
         return 1.0;
     }

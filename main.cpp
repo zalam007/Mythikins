@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Battle.h" // includes Mythikin.h & Attack.h
-#include "Mythidex.h" //
+#include "Battle.h" // includes Mythikin.h & Attack.h & Team.h (Team.cpp)
+#include "Mythidex.h" // 
 using namespace std;
 
 void askForName() {

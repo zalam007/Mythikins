@@ -1,5 +1,5 @@
 #include <string>
-#include "../mythikin.h"
+#include "../Mythikin.h"
 
 #pragma once
 
