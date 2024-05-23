@@ -4,5 +4,5 @@
 
 class Menu {
     public:
-        virtual printMenu() = 0;
+        virtual void printMenu() = 0;
 };
