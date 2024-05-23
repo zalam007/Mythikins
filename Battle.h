@@ -17,7 +17,7 @@ public:
     {
         // Check if the attacker move has any moves left
         if (move.getMM() <= 0) {
-            cout << "No moves left for " << attacker.getName() << endl;
+            cout << attacker.getName() << "has no moves left for " << move.getName() << "!" << endl;
             return; // If no moves left, do nothing
         }
 
@@ -36,7 +36,9 @@ public:
         int damage = static_cast<int>(move.getPower() * typeAdvantage);
         // Reduce the defender's HP
         defender.setHP(defender.getHP() - damage);
+        cout << attacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
     }
+
 
 
     // Simulate a battle round where the NPC attacks the player back
@@ -54,7 +56,7 @@ public:
 
         // Check if the move has MM left
         if (move.getMM() <= 0) {
-            cout << move.getName() << " has no moves left!" << endl;
+            cout << npcAttacker.getName() <<" has no moves left for" << move.getName() << "!" << endl;
             return;
         }
 
@@ -79,6 +81,8 @@ public:
         cout << npcAttacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
     }
 
+
+
     // Swap the current Mythikin with another Mythikin in the team
     void swap(Mythikin& currentMythikin, Team& team, int newMythikinIndex) {
         // Check if new index is within the bounds of the team
@@ -101,6 +105,7 @@ public:
 
         cout << "Swapped " << currentMythikin.getName() << " with " << newMythikin.getName() << "." << endl;
     }
+
 
 
 private:
