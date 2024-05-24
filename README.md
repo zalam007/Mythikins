@@ -34,8 +34,8 @@
  > * Swap will prompt for which Mythikin to swap with.
 
  ## UML
- ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/146377680/787f08d1-a923-4720-80d4-e2853e19361b)
- > * https://drive.google.com/file/d/1NnlT24Q35t8LOOYmB9zHkCZ0mVkx7mtg/view?usp=sharing
+ ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/146038030/200bdec9-e415-45bc-9b85-3dbae2bf84ca)
+ > * https://drive.google.com/file/d/16k-MWYpmxMWjBg1lDiRgTIJrvTYjwJw3/view?usp=sharing
 
  ## Layout + Navigation Diagram
 ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/146377680/3b584628-510a-4e18-966a-ce61cabd387f)
