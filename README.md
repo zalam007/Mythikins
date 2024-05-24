@@ -58,17 +58,26 @@
  >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items
  >      and storing the behavior in the item itself.
  >
- >       We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on. 
+ >       We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
+
+         We applied the Interface-Segregation Principle through our Battle class. 
  >
- >     * How did you apply it? i.e. describe the change.
+ >      * How did you apply it? i.e. describe the change.
  >       We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
  >
  >       For the SRP, we created menu classes to handle outputs to the console and act as drivers for the underlying classes that handle the calculations.
+ >
+ >       Before we changed the class, we would have functions inside the battle class that would not work for certain types of battles, with functions that weren't applicable to the different types of battle.
+          By implementing a derived class we can have battle be applicable to all battles and add on different functions for battles that require more functions. 
  >       
  >     * How did this change help you write better code?
  >       By implementing the vector of pointers, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code.
  >
  >        By adding menu classes we can have less confusing classes with regards to their function, where the menus always handle output and calls the classes they depend on rather than having a class that handles unclearly handles both.
+> 
+          By separating the different functions for battle, we can avoid having to implement a different case within the function depending on whether the battle was with an NPC or not which allows for cleaner less confusing code.
+
+          
 >        
  > * Perform a new sprint plan like you did in Phase II.
  > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
