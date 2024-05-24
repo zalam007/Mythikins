@@ -51,37 +51,39 @@
  > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
  >   * A new class diagram incorporating your changes after considering the SOLID principles.
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
-
+ > https://drive.google.com/file/d/16k-MWYpmxMWjBg1lDiRgTIJrvTYjwJw3/view?usp=sharing
  >     * What SOLID principle(s) did you apply?
- > 
- >      We applied the Dependency Inversion Principle with our item class that is contained in our character class.
- >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items
- >      and storing the behavior in the item itself.
  >
- >       We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
+ >       (S) We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
  >
- >       We applied the Interface-Segregation Principle through our Battle class.
+ >       (L) We applied the Liskov Subsitution Principle for the Battle class.
  >
- >       We applied the Liskov Subsitution Principle for the Battle class.
+ >       (I) We applied the Interface-Segregation Principle through our Battle class.
  >
+ >      (D) We applied the Dependency Inversion Principle with our item class that is contained in our character class.
+ >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items and storing the behavior in the item itself.
+
  >      * How did you apply it? i.e. describe the change.
- >       We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
  >
- >       For the SRP, we created menu classes to handle outputs to the console and act as drivers for the underlying classes that handle the calculations.
- >
- >       Before we changed the class, we would have functions inside the battle class that would not work for certain types of battles, with functions that weren't         applicable to the different types of battle.
- >       By implementing a derived class we can have battle be applicable to all battles and add on different functions for battles that require more functions.
+ >       (S) For the SRP, we created menu classes to handle outputs to the console and act as drivers for the underlying classes that handle the calculations.
  > 
- >        We created the wildBattle subclass that derives from Battle class. It takes all the functions and attributes from Battle class making it perfectly substitute that class.
+ >        (L) We created the wildBattle subclass that derives from Battle class. It takes all the functions and attributes from Battle class making it perfectly substitute that class.
+ >
+ >       (I) Before we changed the class, we would have functions inside the battle class that would not work for certain types of battles, with functions that didn't apply to the different types of battles. By implementing a derived class we can have battle be applicable to all battles and add on different functions for battles that require more functions.
+ >
+ >       (D) We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
+
  >      
  >     * How did this change help you write better code?
- >       By implementing the vector of pointers, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code.
  >
- >       By adding menu classes we can have less confusing classes with regards to their function, where the menus always handle output and calls the classes they depend on rather than having a class that handles unclearly handles both.
-> 
->       By separating the different functions for battle, we can avoid having to implement a different case within the function depending on whether the battle was with an NPC or not which allows for cleaner less confusing code.
->
->       By making it so our team does not need to waste time making unnecessary function calls or checks for battle cases that do not need certain functions. In addition, it makes organization easier.
+ >       (S) By adding menu classes we can have less confusing classes with regards to their function, where the menus always handle output and calls the classes they depend on rather than having a class that handles unclearly handles both.
+ >
+ >       (L) By making it so our team does not need to waste time making unnecessary function calls or checks for battle cases that do not need certain functions. In addition, it makes organization easier.
+ >
+ >       (I) By separating the different functions for battle, we can avoid having to implement a different case within the function depending on whether the battle was with an NPC or not which allows for cleaner less confusing code.
+ > 
+ >       (D) By implementing the vector of pointers, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code.
+
 >        
  > * Perform a new sprint plan like you did in Phase II.
  > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
