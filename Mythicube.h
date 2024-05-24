@@ -23,6 +23,10 @@ public:
         }
     }
 
+    void capturedMythikinToNull(){
+        capturedMythikin = nullptr;
+    }
+
     void use(Mythikin &) override;
 
 private:
