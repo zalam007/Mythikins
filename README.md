@@ -58,6 +58,8 @@
  >
  >       (S) We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
  >
+ >       (O) We appled the Open-closed principle with our Character class where it has items. The items can be added on, and you don't need to modify the class for new items.
+ >
  >       (L) We applied the Liskov Subsitution Principle for the Battle class.
  >
  >       (I) We applied the Interface-Segregation Principle through our Battle class.
@@ -68,6 +70,8 @@
  >      * How did you apply it? i.e. describe the change.
  >
  >       (S) For the SRP, we created menu classes to handle outputs to the console and act as drivers for the underlying classes that handle the calculations.
+ >
+ >       (O) We had to character class store a vector of items. The item class is a virtual function that allows for different child classes to be created and added to the vector. Subclasses include Mythicube and Potions. 
  > 
  >        (L) We created the wildBattle subclass that derives from Battle class. It takes all the functions and attributes from Battle class making it perfectly substitute that class.
  >
@@ -80,6 +84,8 @@
  >
  >       (S) By adding menu classes we can have less confusing classes with regards to their function, where the menus always handle output and calls the classes they depend on rather than having a class that handles unclearly handles both.
  >
+ >       (O) This helps our code as without it we would have to create multiple vectors in the character class which each different items. 
+ > 
  >       (L) By making it so our team does not need to waste time making unnecessary function calls or checks for battle cases that do not need certain functions. In addition, it makes organization easier.
  >
  >       (I) By separating the different functions for battle, we can avoid having to implement a different case within the function depending on whether the battle was with an NPC or not which allows for cleaner less confusing code.
