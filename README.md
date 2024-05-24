@@ -52,8 +52,16 @@
  >   * A new class diagram incorporating your changes after considering the SOLID principles.
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
  >     * What SOLID principle(s) did you apply?
+ >      We applied the Dependency Inversion Principle with our item class that is contained in our character class.
+ >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items
+ >      and storing the behavior in the item itself. 
+ >
  >     * How did you apply it? i.e. describe the change.
+ >       We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
+>       
  >     * How did this change help you write better code?
+ >       By doing it this way, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code.
+>        
  > * Perform a new sprint plan like you did in Phase II.
  > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
  
