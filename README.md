@@ -59,8 +59,8 @@
  >      and storing the behavior in the item itself.
  >
  >       We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
-
-         We applied the Interface-Segregation Principle through our Battle class. 
+ >
+ >        We applied the Interface-Segregation Principle through our Battle class. 
  >
  >      * How did you apply it? i.e. describe the change.
  >       We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
