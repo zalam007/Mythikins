@@ -52,6 +52,7 @@
  >   * A new class diagram incorporating your changes after considering the SOLID principles.
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
  >     * What SOLID principle(s) did you apply?
+
  >      We applied the Dependency Inversion Principle with our item class that is contained in our character class.
  >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items
  >      and storing the behavior in the item itself. 
