@@ -3,7 +3,7 @@
 Mythicube::Mythicube(string name, unsigned quant, unsigned cap, unsigned rate)
                     : Item(name, quant, cap), catchRate(rate), capturedMythikin(nullptr){}
 
-bool Mythicube::caught(Mythikin &victim) const
+bool Mythicube::isCaught(Mythikin &victim) const
 {
     // Calculate percentage of health the victim has
     double hpPercent = ((victim.getHP()) / static_cast<double>(victim.getMaxHP())) * 100;
@@ -35,9 +35,9 @@ bool Mythicube::caught(Mythikin &victim) const
 
 void Mythicube::use(Mythikin &victim)
 {
-    if (caught(victim))
+    if (isCaught(victim)) //If formula returned successful, store Mythikin caught
     {
         capturedMythikin = new Mythikin(victim);
     }
-    changeQuantity(getQuantity() - 1);
+    changeQuantity(getQuantity() - 1);  //decrement quanitity
 }
