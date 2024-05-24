@@ -26,5 +26,5 @@ public:
     void use(Mythikin &) override;
 
 private:
-    bool caught(Mythikin &) const; // helper function
+    bool isCaught(Mythikin &) const; // helper function
 };
