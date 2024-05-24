@@ -51,6 +51,7 @@
  > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
  >   * A new class diagram incorporating your changes after considering the SOLID principles.
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
+
  >     * What SOLID principle(s) did you apply?
 
  >      We applied the Dependency Inversion Principle with our item class that is contained in our character class.
