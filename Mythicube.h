@@ -17,16 +17,18 @@ public:
 
     unsigned getCatchRate() const { return catchRate; }
 
-    Mythikin& getMythikin() const { 
+    Mythikin* getMythikin() const { 
         if(capturedMythikin) {
-            return *capturedMythikin;
+            return capturedMythikin;
         }
-        __throw_runtime_error("Called getMythikin when cube is empty.");
-        
+    }
+
+    void capturedMythikinToNull(){
+        capturedMythikin = nullptr;
     }
 
     void use(Mythikin &) override;
 
 private:
-    bool caught(Mythikin &) const; // helper function
+    bool isCaught(Mythikin &) const; // helper function
 };
