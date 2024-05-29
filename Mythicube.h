@@ -4,31 +4,29 @@
 
 class Mythicube : protected Item
 {
-    unsigned catchRate;         //influence how easier it is to catch a Mythikin
-    Mythikin* capturedMythikin = nullptr; //holds the captured Mythikin if successfully caught
+    unsigned catchRate;                     //int of how easy it is to catch a Mythikin. 1 is default (catch based on health and chance), 2 is half is likely
+    Mythikin* capturedMythikin = nullptr;   //holds the captured Mythikin if successfully caught (nullptr if not)
 
 public:
-    Mythicube(string, unsigned, unsigned, unsigned);
+    // Constructor, extension of item class
+    Mythicube::Mythicube(string name, unsigned quant, unsigned cap, unsigned rate)  //TODO PRICE
+                    : Item(name, quant, cap), catchRate(rate){}
 
-    // default cube
-    Mythicube() : Item("Regular Mythicube", 1, 1), catchRate(1), capturedMythikin(nullptr) {}
+    // Default constructor
+    Mythicube() : Item("Mythicube", 1, 1), catchRate(1), capturedMythikin(nullptr) {}
 
-    ~Mythicube(){delete capturedMythikin;}
+    // Destructor
+    ~Mythicube() { delete capturedMythikin; }
 
+    // Getter
     unsigned getCatchRate() const { return catchRate; }
+    Mythikin* getCapturedMythikin() const { return capturedMythikin; }  //returns nullpointer if no Mythikin
 
-    Mythikin* getMythikin() const { 
-        if(capturedMythikin) {
-            return capturedMythikin;
-        }
-    }
+    void emptyMythicube(){ capturedMythikin = nullptr; } // sets Mythicube pointer to null
 
-    void capturedMythikinToNull(){
-        capturedMythikin = nullptr;
-    }
-
-    void use(Mythikin &) override;
+    // Calls gauranteeded to be caught, stores the Mythikin in the pointer
+    void use(Mythikin& victim) override;
 
 private:
-    bool isCaught(Mythikin &) const; // helper function
+    bool gauranteedToBeCaught(Mythikin& victim) const; // helper function, calculates if the catch will be successful
 };
