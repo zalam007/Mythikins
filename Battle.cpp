@@ -2,12 +2,12 @@
 
 using namespace std;
 
-// Consturctor
-Battle::Battle() {
+//Constructor
+Battle::Battle(Team& playerTeam, Team& npcTeam) : playerTeam(playerTeam), npcTeam(npcTeam) {
     srand(static_cast<unsigned>(time(0))); // Initialize the random seed
 }
 
-// Player Mythikin attacks NPC Mythikin with move
+//Player Mythikin attacks NPC Mythikin with move
 void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
     // Check if the attacker move has any moves left
     if (move.getMM() <= 0) {
@@ -33,7 +33,7 @@ void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
     cout << attacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
 }
 
-// NPC Mythikin attacks Player Mythikin with random move
+//NPC Mythikin attacks Player Mythikin with random move
 void Battle::AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
     // Get the NPC's available attacks
     vector<Attack> availableAttacks = npcAttacker.getAttacks();
@@ -73,8 +73,54 @@ void Battle::AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
     cout << npcAttacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
 }
 
+void Battle::swapSlots(int slot1, int slot2)
+{
+    // Check fail if the new Mythikin is knocked out
+    if (playerTeam.getSlot(slot2).isKnocked()) {
+      cout << "Invalid swap: Mythikin is knocked out." << endl;
+      return;
+    }
+    playerTeam.swapSlots(slot1, slot2);
+}
 
-//Type advantage attack multiplier (note. attackX not implmented)
+//Check if the battle is over
+bool Battle::isOver() {
+    // Check if all player's Mythikins are knocked out
+    bool playerAllKnockedOut = true;
+    for (int i = 0; i < playerTeam.getSize(); ++i) {
+        if (playerTeam.getSlot(i).getHP() > 0) {
+            playerAllKnockedOut = false;
+            break;
+        }
+    }
+
+    // Check if all NPC's Mythikins are knocked out
+    bool npcAllKnockedOut = true;
+    for (int i = 0; i < npcTeam.getSize(); ++i) {
+        if (npcTeam.getSlot(i).getHP() > 0) {
+            npcAllKnockedOut = false;
+            break;
+        }
+    }
+
+    return playerAllKnockedOut || npcAllKnockedOut; // Return true if either team is all knocked
+}
+
+// Check if the player has won
+bool Battle::ifWon() {
+    // Check if any player's Mythikins are still alive
+    bool playerHasAlive = false;
+    for (int n = 0; n < playerTeam.getSize(); n++) {
+        if (playerTeam.getSlot(n).getHP() > 0) {
+            playerHasAlive = true;
+            break;
+        }
+    }
+
+    return isOver() && playerHasAlive;
+}
+
+//Type advantage attack multiplier (dev note. attackX not implmented)
 double Battle::getTypeAdvantage(const std::string& attackerType, const std::string& defenderType) {
     if ((attackerType == "fire" && defenderType == "grass") ||
         (attackerType == "grass" && defenderType == "water") ||

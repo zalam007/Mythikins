@@ -10,15 +10,9 @@ Mythikin& Team::getSlot(int index) {
 }
 
 void Team::swapSlots(int slot1, int slot2) {
-  if (slot1 < 0 || slot1 > teamSize || slot2 < 0 || slot2 > teamSize)
-  {
+  if (slot1 < 0 || slot1 > teamSize || slot2 < 0 || slot2 > teamSize) {
     cerr << "Invalid swap: Index out of bounds." << endl;
     return;
-  }
-  // Check if the new Mythikin is knocked out
-  if (team[slot2].isKnocked()) {
-      cout << "Invalid swap: Mythikin is knocked out." << endl;
-      return;
   }
 
   // Perform swap
