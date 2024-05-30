@@ -1,5 +1,5 @@
 using namespace std;
-#include "Battle.h"
+#include "../header/Battle.h"
 
 //Player Mythikin attacks NPC Mythikin with move
 void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {

@@ -1,4 +1,4 @@
-#include "Mythicube.h"
+#include "../header/Mythicube.h"
 
 
 bool Mythicube::calculatedToBeCaught(Mythikin &victim) const

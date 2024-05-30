@@ -1,4 +1,4 @@
-#include "WildBattle.h"
+#include "../header/WildBattle.h"
 
 bool WildBattle::isOver() {
     // Return true if the wild Mythikin was successfully caught

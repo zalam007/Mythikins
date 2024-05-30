@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "Mythikin.h"   // Attack.h included
-#include "header/Team.h"
+#include "Team.h"
 
 class Battle {
 public:
