@@ -60,8 +60,8 @@ public:
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
     void setHP(int HP) {
-        if(HP >= maxHP) { this->HP = maxHP; }
-        else { this->HP = HP; }
+        if(HP >= maxHP) { cerr << "set HP over max, set to max"; this->HP = maxHP; }    //HP set to high
+        else { this->HP = HP; } // HP set
     }
     void setAttackX(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }

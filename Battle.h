@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "Mythikin.h"
+#include "Mythikin.h"   // Attack.h included
 #include "header/Team.h"
 
 class Battle {
@@ -12,7 +12,7 @@ public:
 
     void stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move); // Player Mythikin attacks NPC Mythikin with move
     void AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender); // NPC Mythikin attacks Player Mythikin with random move
-    void swapSlots(int slot1, int slot2); // Swaps the Mythikins at the given indices
+    void swapSlots(int slot1, int slot2); // Swaps the Mythikins in the team array at the given indices if the Mythikin at slot2 is alive
     bool isOver(); // Check if the battle is over. Returns true if either team is out of Mythikins (all knocked out)
     bool ifWon(); // Check if the player has won. Returns true if the NPC team is all knocked out and the player's team is still alive
 private:
