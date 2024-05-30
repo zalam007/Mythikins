@@ -9,7 +9,7 @@ class Mythicube : protected Item
 
 public:
     //Constructor, extension of item class
-    Mythicube::Mythicube(string name, unsigned quant, unsigned cap, unsigned rate)  //TODO PRICE
+    Mythicube(string name, unsigned quant, unsigned cap, unsigned rate)  //TODO PRICE
                     : Item(name, quant, cap), catchRate(rate){}
 
     //Default constructor
