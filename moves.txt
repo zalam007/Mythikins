@@ -1,3 +1,0 @@
-Stomp normal 10 90 10
-Hoof-Spark fire 15 90 10
-Flame-Charge fire 20 90 15

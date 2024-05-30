@@ -1,3 +1,0 @@
-Blazehoof false fire 1 70 100 1.0
-Infernocolt false fire 2 80 110 1.0
-Magmamane false fire 2 90 120 1.0
