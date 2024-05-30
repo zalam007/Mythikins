@@ -1,4 +1,4 @@
-#include "WildLocation.h"
+#include "header/WildLocation.h"
 
 int WildLocation::getSpawnRate() const
 {
