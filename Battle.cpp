@@ -2,10 +2,12 @@
 
 using namespace std;
 
+// Consturctor
 Battle::Battle() {
     srand(static_cast<unsigned>(time(0))); // Initialize the random seed
 }
 
+// Player Mythikin attacks NPC Mythikin with move
 void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
     // Check if the attacker move has any moves left
     if (move.getMM() <= 0) {
@@ -31,6 +33,7 @@ void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
     cout << attacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
 }
 
+// NPC Mythikin attacks Player Mythikin with random move
 void Battle::AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
     // Get the NPC's available attacks
     vector<Attack> availableAttacks = npcAttacker.getAttacks();
@@ -70,28 +73,8 @@ void Battle::AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
     cout << npcAttacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
 }
 
-void Battle::swap(Mythikin& currentMythikin, Team& team, int newMythikinIndex) {
-    // Check if new index is within the bounds of the team
-    if (newMythikinIndex < 0 || newMythikinIndex >= team.getSize()) {
-        cerr << "Invalid swap: Index out of bounds." << endl;
-        return;
-    }
 
-    // Check if the new Mythikin is knocked out
-    Mythikin& newMythikin = team.getSlot(newMythikinIndex);
-    if (newMythikin.isKnocked()) {
-        cout << "Invalid swap: Mythikin is knocked out." << endl;
-        return;
-    }
-
-    // Perform the swap
-    Mythikin oldMythikin = currentMythikin;
-    currentMythikin = newMythikin;
-    newMythikin = oldMythikin;
-
-    cout << "Swapped " << currentMythikin.getName() << " with " << newMythikin.getName() << "." << endl;
-}
-
+//Type advantage attack multiplier (note. attackX not implmented)
 double Battle::getTypeAdvantage(const std::string& attackerType, const std::string& defenderType) {
     if ((attackerType == "fire" && defenderType == "grass") ||
         (attackerType == "grass" && defenderType == "water") ||

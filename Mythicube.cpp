@@ -1,7 +1,7 @@
 #include "Mythicube.h"
 
 
-bool Mythicube::gauranteedToBeCaught(Mythikin &victim) const
+bool Mythicube::calculatedToBeCaught(Mythikin &victim) const
 {
     // Calculate percentage of health the victim has
     double hpPercent = ((victim.getHP()) / static_cast<double>(victim.getMaxHP())) * 100;
@@ -34,7 +34,7 @@ bool Mythicube::gauranteedToBeCaught(Mythikin &victim) const
 void Mythicube::use(Mythikin& victim)
 {
     //If formula returned successful, store Mythikin caught
-    if (gauranteedToBeCaught(victim))
+    if (calculatedToBeCaught(victim))
     {
         capturedMythikin = new Mythikin(victim);
     }

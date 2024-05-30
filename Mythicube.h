@@ -28,5 +28,5 @@ public:
     void use(Mythikin& victim) override;
 
 private:
-    bool gauranteedToBeCaught(Mythikin& victim) const; // helper function, calculates if the catch will be successful
+    bool calculatedToBeCaught(Mythikin& victim) const; // helper function, calculates if the catch will be successful
 };
