@@ -2,7 +2,7 @@
 
 #include <string>
 #include <iostream>
-#include "../Mythikin.h"
+#include "Mythikin.h"
 
 using std::string;
 

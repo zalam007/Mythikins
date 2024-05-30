@@ -1,7 +1,9 @@
-#include <string>
-#include "../Mythikin.h"
-
 #pragma once
+
+#include <string>
+#include "Mythikin.h"
+
+
 
 using namespace std;
 
