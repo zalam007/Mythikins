@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "../mythikin.h"
+#include "../Mythikin.h"
 
 using std::string;
 

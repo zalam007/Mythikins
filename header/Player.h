@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "./Location.h"
-#include "../mythikin.h"
+#include "../Mythikin.h"
 #include "./Item.h"
 #include "./Character.h"
 using std::string;
