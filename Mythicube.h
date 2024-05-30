@@ -8,23 +8,23 @@ class Mythicube : protected Item
     Mythikin* capturedMythikin = nullptr;   //holds the captured Mythikin if successfully caught (nullptr if not)
 
 public:
-    // Constructor, extension of item class
+    //Constructor, extension of item class
     Mythicube::Mythicube(string name, unsigned quant, unsigned cap, unsigned rate)  //TODO PRICE
                     : Item(name, quant, cap), catchRate(rate){}
 
-    // Default constructor
+    //Default constructor
     Mythicube() : Item("Mythicube", 1, 1), catchRate(1), capturedMythikin(nullptr) {}
 
-    // Destructor
+    //Destructor
     ~Mythicube() { delete capturedMythikin; }
 
-    // Getter
+    //Getters
     unsigned getCatchRate() const { return catchRate; }
     Mythikin* getCapturedMythikin() const { return capturedMythikin; }  //returns nullpointer if no Mythikin
-
+    //Setter
     void emptyMythicube(){ capturedMythikin = nullptr; } // sets Mythicube pointer to null
 
-    // Calls gauranteeded to be caught, stores the Mythikin in the pointer
+    //Calls calculatedToBeCaught to be caught and uses the Mythicube to catch it, stores the Mythikin in the capturedMythikin pointer
     void use(Mythikin& victim) override;
 
 private:

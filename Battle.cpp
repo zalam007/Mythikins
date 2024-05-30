@@ -1,11 +1,5 @@
-#include "Battle.h"
-
 using namespace std;
-
-//Constructor
-Battle::Battle(Team& playerTeam, Team& npcTeam) : playerTeam(playerTeam), npcTeam(npcTeam) {
-    srand(static_cast<unsigned>(time(0))); // Initialize the random seed
-}
+#include "Battle.h"
 
 //Player Mythikin attacks NPC Mythikin with move
 void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
