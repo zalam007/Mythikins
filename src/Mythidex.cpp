@@ -1,4 +1,4 @@
-#include "Mythidex.h"
+#include "../header/Mythidex.h"
 #include <fstream>
 #include <iostream>
 

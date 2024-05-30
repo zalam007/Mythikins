@@ -1,4 +1,4 @@
-#include "Potion.h"
+#include "../header/Potion.h"
 
 /*
     Formula: Current HP + (Potion heal HP% of Patient's maxHP)

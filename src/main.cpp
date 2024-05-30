@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Battle.h" // includes Mythikin.h & Attack.h
-#include "Mythidex.h" //
-#include "header/Player.h"
+#include "../header/Battle.h" // includes Mythikin.h & Attack.h
+#include "../header/Mythidex.h" //
+#include "../header/Player.h"
 using namespace std;
 
 string askForName() {

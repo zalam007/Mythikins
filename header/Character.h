@@ -2,8 +2,8 @@
 
 #include <string>
 #include <vector>
-#include "../Mythikin.h"
-#include "./Item.h"
+#include "Mythikin.h"
+#include "Item.h"
 #include "Team.h"
 #include <cstdlib>
 
