@@ -35,22 +35,23 @@ public:
     // Default constructor
     Mythikin() : name("Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
   
-    //Copy Mythikin Constructor
+    //Copy Constructor
     Mythikin(const Mythikin& other) : name(other.name), wild(other.wild), type(other.type), level(other.level), speed(other.speed), maxHP(other.maxHP), HP(other.HP), attackX(other.attackX), attacks(other.attacks) {}
+    //TODO: Implemetn Copy assignment
 
-    bool isKnocked() const { return HP <= 0; }
-    // Getters
+    //GETTERS:
     string getName() const { return name; }
     bool isWild() const { return wild; }
     string getType() const { return type; }
     int getLevel() const { return level; }
     int getSpeed() const { return speed; }
-    int getMaxHP() const { return maxHP; }
     int getHP() const { return HP; }
+    int getMaxHP() const { return maxHP; }
+    bool isKnocked() const { return HP <= 0; }
     int getAttackX() const { return attackX; }
     vector<Attack> getAttacks() const { return attacks; }
 
-    // Setters
+    //SETTERS:
     void setName(string name) { this->name = name; }
     void setWild(bool wild) { this->wild = true; }
     void setTamed(bool wild) { this->wild = false; }
@@ -59,8 +60,8 @@ public:
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
     void setHP(int HP) {
-        if(HP >= maxHP) { this->HP = maxHP; }
-        else { this->HP = HP; }
+        if(HP >= maxHP) { cerr << "set HP over max, set to max"; this->HP = maxHP; }    //HP set to high
+        else { this->HP = HP; } // HP set
     }
     void setAttackX(int attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }

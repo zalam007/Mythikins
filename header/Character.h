@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-#include "../mythikin.h"
+#include "../Mythikin.h"
 #include "./Item.h"
 #include "Team.h"
 #include <cstdlib>

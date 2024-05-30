@@ -10,7 +10,7 @@ private:
     string type;
     int power;
     int accuracy;
-    int maxMM; // max moves
+    int maxMM; // max mythican moves
     int MM;    // mythican moves left
 
 public:

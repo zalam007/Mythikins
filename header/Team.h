@@ -1,25 +1,23 @@
 #pragma once
 
 #include <string>
-#include "../mythikin.h"
+#include <iostream>
+#include "../Mythikin.h"
 
 using std::string;
 
 class Team {
   private:
-    static const int MAX_SIZE = 4;
-    Mythikin team[MAX_SIZE];
-    int teamSize = 0;
+    static const int MAX_SIZE = 4; // Max size of the team
+    Mythikin team[MAX_SIZE];  // Array to hold the team members
+    int teamSize = 0;         // current size of the team
   public:
-    int getSize() const { return teamSize; }
-    int getMaxSize() const { return MAX_SIZE; }
-    Mythikin& getSlot(int index);
+    int getSize() const { return teamSize; }    // Returns the current size of the team
+    int getMaxSize() const { return MAX_SIZE; } // Returns the max possible size of the team (4)
+    Mythikin& getSlot(int index);   // Returns a reference to the Mythikin at the given index
 
-    void swapSlots(int slot1, int slot2);
+    void swapSlots(int slot1, int slot2); // Swaps the Mythikins at the given indices
 
-    void addMythikin(Mythikin newMember);
-    void removeMythikin(const string& name);
-
-    
-
+    void addMythikin(Mythikin newMember);     // Adds a new member to the team
+    void removeMythikin(const string& name);  // Removes a member from the team by name
 };
