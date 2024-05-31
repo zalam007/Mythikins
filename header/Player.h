@@ -2,10 +2,10 @@
 
 #include <string>
 #include <vector>
-#include "Location.h"
-#include "Mythikin.h"
-#include "Item.h"
-#include "Character.h"
+#include "../header/Location.h"
+#include "../header/Mythikin.h"
+#include "../header/Item.h"
+#include "../header/Character.h"
 using std::string;
 
 class Player : public Character
@@ -26,7 +26,7 @@ public:
 
   const string &getName() const { return Character::name; }
   const Location &getLocation() const { return currentLocation; }
-  const Team &getTeam() const { return Character::team; }
+  Team &getTeam() { return Character::team; }
   const vector<Item*> &getInventory() const { return Character::items; }
 
 

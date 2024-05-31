@@ -13,6 +13,8 @@ private:
     vector<NPC> NPCSpawn;
 
 public:
+    Location() {}
+
     Location(const string &name) : name(name) {}
 
     Location(const string &name, const vector<Location *> &neighbors) : name(name), neighborLocations(neighbors) {}
