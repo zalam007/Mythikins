@@ -1,5 +1,5 @@
 {
-    // Debugger -g
+    // Debugger g++ -g test.cpp
     
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -9,10 +9,10 @@
         "name": "(gdb) Launch",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${fileDirname}/a.out",
+        "program": "${workspaceFolder}/a.out",
         "args": [],
         "stopAtEntry": false,
-        "cwd": "${fileDirname}",
+        "cwd": "${workspaceFolder}",
         "environment": [],
         "externalConsole": false,
         "MIMode": "gdb",
