@@ -17,6 +17,7 @@ public:
     Attack(string name, string type, int power, int accuracy, int MM)
         : name(name), type(type), power(power), accuracy(accuracy), maxMM(MM), MM(MM) {}
 
+    // Default constructor
     Attack() : name("nibble"), type("normal"), power(5), accuracy(80), maxMM(20), MM(20) {}
 
     // Getters

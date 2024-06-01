@@ -114,12 +114,18 @@ bool Battle::ifWon() {
     return isOver() && playerHasAlive;
 }
 
-//Type advantage attack multiplier (dev note. attackX not implmented)
+//Type advantage attack multiplier 
+// dev notes: attackX not implmented. could instead use typeAdvantage for moves
 double Battle::getTypeAdvantage(const std::string& attackerType, const std::string& defenderType) {
-    if ((attackerType == "fire" && defenderType == "grass") ||
-        (attackerType == "grass" && defenderType == "water") ||
-        (attackerType == "water" && defenderType == "fire")) {
-        return 1.1;
+    if ((attackerType == "magma" && defenderType == "flora") ||
+        (attackerType == "flora" && defenderType == "agua") ||
+        (attackerType == "agua" && defenderType == "magma")) {
+        return 1.1; // attacker has advantage
     }
-    return 1.0;
+    else if ((attackerType == "magma" && defenderType == "agua") ||
+             (attackerType == "flora" && defenderType == "magma") ||
+             (attackerType == "agua" && defenderType == "flora")) {
+        return 0.9; // attacker has disadvantage
+    }
+    return 1.0; // no advantage
 }

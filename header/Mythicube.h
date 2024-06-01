@@ -22,7 +22,7 @@ public:
     unsigned getCatchRate() const { return catchRate; }
     Mythikin* getCapturedMythikin() const { return capturedMythikin; }  //returns nullpointer if no Mythikin
     //Setter
-    void emptyMythicube(){ capturedMythikin = nullptr; } // sets Mythicube pointer to null
+    void emptyMythicube() { capturedMythikin = nullptr; } // sets Mythicube pointer to null
 
     //Calls calculatedToBeCaught to be caught and uses the Mythicube to catch it, stores the Mythikin in the capturedMythikin pointer
     void use(Mythikin& victim) override;

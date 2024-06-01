@@ -1,3 +1,41 @@
-Stomp normal 10 90 10
-Hoof-Spark fire 15 90 10
-Flame-Charge fire 20 90 15
+Stomp normal 10 85 10
+Bite normal 10 90 10
+Cut normal 10 95 10
+Whisperwind normal 15 90 10
+SereneStrike normal 20 85 10
+RascalsRuse normal 15 90 10
+
+HoofSpark magma 15 90 10
+FlameCharge magma 20 80 15
+MagmaSmash magma 25 75 10
+Pyroquake magma 30 70 5
+FlareFlicker magma 15 95 10
+SootStrike magma 20 85 10
+EmberSpin magma 15 90 10
+ScorchingSwipe magma 25 80 5
+
+Splash agua 5 100 20
+Flood agua 30 70 5
+TidalFang agua 25 85 10
+Tsunami agua 35 75 5
+HydroHose agua 20 90 10
+Rippleclaw agua 15 95 10
+AquaVortex agua 25 80 10
+GlacialDive agua 30 75 5
+
+RootSlap flora 15 90 10
+VineLash flora 20 85 10
+ThornSlash flora 25 80 10
+VerdantAbsorption flora 10 100 10
+PetalPrison flora 20 85 5
+RootRumble flora 30 70 5
+ShadowPetals flora 15 90 10
+Lunarbeam flora 25 80 10
+MoonlitBloom flora 10 100 10
+NightfallDance flora 20 85 5
+EclipseSurge flora 30 75 5
+LeafletBarrage flora 20 90 10
+BuddingBlast flora 25 85 5
+RootWrap flora 15 95 10
+LeafBlade flora 30 80 5
+BrambleStrike flora 35 75 5
