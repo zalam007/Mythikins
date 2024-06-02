@@ -3,8 +3,6 @@
 #include <string>
 #include "Mythikin.h"
 
-
-
 using namespace std;
 
 class Item
@@ -13,9 +11,11 @@ protected:
     string name;
     unsigned quantity;
     unsigned capacity;
+    unsigned price;
 
 public:
-    Item(string name, unsigned quant, unsigned cap) : name(name), quantity(quant), capacity(cap)
+    // Constructor for Item
+    Item(string name, unsigned quant, unsigned cap, unsigned price) : name(name), quantity(quant), capacity(cap), price(price)
     {
         // capacity can not be less that quanitity
         if (capacity < quantity)
@@ -25,30 +25,28 @@ public:
     };
 
     // Accessor methods
-    string getName() const { return name; }
+    const string getName() const { return name; }
 
-    unsigned getQuantity() const { return quantity; }
+    const unsigned getQuantity() const { return quantity; }
 
-    unsigned getCapacity() const { return capacity; }
+    const unsigned getCapacity() const { return capacity; }
+
+    const unsigned getPrice() const { return price; }
 
     // Mutator methods
-    void nameItem(string newName) { name = newName; }
+    void setName(string newName) const { name = newName; }
 
-    void changeQuantity(unsigned newQuant)
-    {
-        if (newQuant >= 0)
-        {
-            quantity = newQuant;
-        }
-    }
+    void setQuantity const(unsigned newQuant) { quantity = newQuant; }
 
-    void changeCapacity(unsigned newCap)
+    void setCapacity const(unsigned newCap)
     {
-        if (newCap >= quantity && newCap >= 0)
+        if (newCap >= quantity)
         {
             capacity = newCap;
         }
     }
 
-    virtual void use(Mythikin&) = 0;
+    void setPrice() const { price = newPrice; }
+
+    virtual void use const(Mythikin &) = 0; // Special user of the item.
 };
