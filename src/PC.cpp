@@ -17,7 +17,7 @@ void PC::depositMythikin(Mythikin &mover, Team &userTeam)
         return;
     }
     // Nothing if the team is empty or only has one Mythikin.
-    cout << "You can not deposit your one Mythikin in your team!" << endl;
+    cerr << "You can not deposit your one Mythikin in your team!" << endl;
 }
 
 void PC::withdrawMythikin(const string name)
@@ -34,9 +34,9 @@ void PC::withdrawMythikin(const string name)
             }
         }
         // Nothing if the Mythikin is not found.
-        cout << "Mythikin not found!" << endl;
+        cerr << "Mythikin not found!" << endl;
         return;
     }
     // Nothing if the team is full.
-    cout << "Team is full. No space to withdraw from PC into your team!" << endl;
+    cerr << "Team is full. No space to withdraw from PC into your team!" << endl;
 }
