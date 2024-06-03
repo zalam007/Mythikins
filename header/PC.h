@@ -18,4 +18,6 @@ public:
     void depositMythikin(Mythikin &mover, Team &userTeam); // Place a Mythikin into the PC and remove it from the team
 
     void withdrawMythikin(const string name, Team &userTeam); // Place a Mythikin into the Team and remove it from the PC
+
+    void placeMythikinToPC(Mythikin &mover); // Place a Mythikin into the PC without looking at the team
 };
