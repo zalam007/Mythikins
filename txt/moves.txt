@@ -14,14 +14,14 @@ SootStrike magma 20 85 10
 EmberSpin magma 15 90 10
 ScorchingSwipe magma 25 80 5
 
-Splash agua 5 100 20
-Flood agua 30 70 5
-TidalFang agua 25 85 10
-Tsunami agua 35 75 5
-HydroHose agua 20 90 10
-Rippleclaw agua 15 95 10
-AquaVortex agua 25 80 10
-GlacialDive agua 30 75 5
+Splash aqua 5 100 20
+Flood aqua 30 70 5
+TidalFang aqua 25 85 10
+Tsunami aqua 35 75 5
+HydroHose aqua 20 90 10
+Rippleclaw aqua 15 95 10
+AquaVortex aqua 25 80 10
+GlacialDive aqua 30 75 5
 
 RootSlap flora 15 90 10
 VineLash flora 20 85 10

@@ -7,12 +7,12 @@ Pyrcoonito magma 2 69 109
 
 
 
-Aquafin water 1 50 100
-Riverkin water 2 70 110
-Hyrdazor water 3 90 120
+Aquafin aqua 1 50 100
+Riverkin aqua 2 70 110
+Hyrdazor aqua 3 90 120
 
 Forstfletch aqua 1 50 99
-Claciquil aqua 69 109
+Claciquil aqua 2 69 109
 
 
 
