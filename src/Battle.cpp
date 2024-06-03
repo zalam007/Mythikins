@@ -118,13 +118,13 @@ bool Battle::ifWon() {
 // dev notes: attackX not implmented. could instead use typeAdvantage for moves
 double Battle::getTypeAdvantage(const std::string& attackerType, const std::string& defenderType) {
     if ((attackerType == "magma" && defenderType == "flora") ||
-        (attackerType == "flora" && defenderType == "agua") ||
-        (attackerType == "agua" && defenderType == "magma")) {
+        (attackerType == "flora" && defenderType == "aqua") ||
+        (attackerType == "aqua" && defenderType == "magma")) {
         return 1.1; // attacker has advantage
     }
-    else if ((attackerType == "magma" && defenderType == "agua") ||
+    else if ((attackerType == "magma" && defenderType == "aqua") ||
              (attackerType == "flora" && defenderType == "magma") ||
-             (attackerType == "agua" && defenderType == "flora")) {
+             (attackerType == "aqua" && defenderType == "flora")) {
         return 0.9; // attacker has disadvantage
     }
     return 1.0; // no advantage
