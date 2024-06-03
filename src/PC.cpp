@@ -41,7 +41,7 @@ void PC::withdrawMythikin(const string name)
     cerr << "Team is full. No space to withdraw from PC into your team!" << endl;
 }
 
-void placeMythikinToPC(Mythikin &mover)
+void PC::placeMythikinToPC(Mythikin &mover)
 {
     mythikinPCStorage.push_back(new Mythikin(mover)); // Adds a new Mythikin to the PC.
 }
