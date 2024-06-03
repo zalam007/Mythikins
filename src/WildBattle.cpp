@@ -39,10 +39,23 @@ bool WildBattle::ifWon() {
     return isOver() && playerHasAlive;
 }
 
-
-void WildBattle::catchMythikin() {
+//Add Mythikin to player's team if caught, if the team is full add the Mythikin to the PC
+void WildBattle::catchMythikin(PC& playerPC) {
     myMythicube.use(wildMythikin); // Call the use method of Mythicube to attempt catching the wild Mythikin
-    // TODO: add Mythikin to player's team if caught, if the team is full add the Mythikin to the PC
+    Mythikin* capturedMythikin = myMythicube.getCapturedMythikin(); // Get the captured Mythikin (nullptr if not caught)
+
+    if (capturedMythikin != nullptr) { // Check if the Mythikin was successfully caught
+        // Add the Mythikin to the player's team if there's space
+        if (playerTeam.getSize() < playerTeam.getMaxSize()) {
+            playerTeam.addMythikin(*capturedMythikin);
+        } 
+        // Add the Mythikin to the PC if the team is full
+        else {
+            PC playerPC;
+            playerPC.placeMythikinToPC(*capturedMythikin);
+        }
+        myMythicube.emptyMythicube(); // Empty the Mythicube after adding the Mythikin to the team or PC
+    }
 }
 
 // 25% chance of fleeing

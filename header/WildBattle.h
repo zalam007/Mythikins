@@ -2,6 +2,7 @@
 
 #include "Battle.h"
 #include "Mythicube.h"
+#include "PC.h"
 
 class WildBattle : public Battle {
 public:
@@ -12,7 +13,7 @@ public:
     bool isOver() override; // Override isOver to consider battle end if player team is knocked out
     bool ifWon() override;  // Override ifWon to always return false in WildBattle
 
-    void catchMythikin();   // catch the wild Mythikin with the Mythicube
+    void catchMythikin(PC& playerPC);   // catch the wild Mythikin with the Mythicube (move to team, if full move to pc)
     bool Flee();    // 25% chance of fleeing
 private:
     Mythikin& wildMythikin; // Wild Mythikin to battle
