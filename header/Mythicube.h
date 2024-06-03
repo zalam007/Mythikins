@@ -20,7 +20,6 @@ public:
 
     // Getters
     unsigned getCatchRate() const { return catchRate; } // returns the catch rate
-
     Mythikin *getCapturedMythikin() const { return capturedMythikin; } // returns nullpointer if no Mythikin
 
     // Setters

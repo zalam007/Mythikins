@@ -1,7 +1,7 @@
 using namespace std;
 #include <iostream>
 #include "../header/Battle.h"
-//g++ -o testBattle test.cpp Battle.cpp src/Team.cpp
+//g++ src/battleTest.cpp src/Battle.cpp src/Team.cpp
 
 int main() {
     // Create player Mythikins

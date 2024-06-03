@@ -42,6 +42,7 @@ bool WildBattle::ifWon() {
 
 void WildBattle::catchMythikin() {
     myMythicube.use(wildMythikin); // Call the use method of Mythicube to attempt catching the wild Mythikin
+    // TODO: add Mythikin to player's team if caught, if the team is full add the Mythikin to the PC
 }
 
 // 25% chance of fleeing
