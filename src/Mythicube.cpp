@@ -37,5 +37,5 @@ void Mythicube::use(Mythikin &victim)
     {
         capturedMythikin = new Mythikin(victim);
     }
-    changeQuantity(getQuantity() - 1); // decrement quanitity
+    setQuantity(getQuantity() - 1); // decrement quanitity
 }

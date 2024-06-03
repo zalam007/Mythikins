@@ -34,11 +34,11 @@ public:
     const unsigned getPrice() const { return price; }
 
     // Mutator methods
-    void setName(string newName) const { name = newName; }
+    void setName(string newName) { name = newName; }
 
-    void setQuantity const(unsigned newQuant) { quantity = newQuant; }
+    void setQuantity(unsigned newQuant) { quantity = newQuant; }
 
-    void setCapacity const(unsigned newCap)
+    void setCapacity(unsigned newCap)
     {
         if (newCap >= quantity)
         {
@@ -46,7 +46,7 @@ public:
         }
     }
 
-    void setPrice() const { price = newPrice; }
+    void setPrice(unsigned newPrice) { price = newPrice; }
 
-    virtual void use const(Mythikin &) = 0; // Special user of the item.
+    virtual void use(Mythikin &) = 0; // Special user of the item.
 };
