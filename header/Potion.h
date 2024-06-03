@@ -14,7 +14,7 @@ public:
 
     const unsigned getHealPowerPercent() const { return healPowerPercent; }
 
-    void setHealPowerPercent const(int newHealPower) { healPowerPercent = newHealPower; }
+    void setHealPowerPercent(int newHealPower) { healPowerPercent = newHealPower; }
 
     void use(Mythikin &patient);
 };
