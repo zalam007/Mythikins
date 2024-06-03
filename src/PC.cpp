@@ -1,6 +1,13 @@
 #include "../header/PC.h"
 
-~PC() // Deletes entire PC storage.
+PC::~PC() // Deletes entire PC storage.
+{
+    for (int i = 0; i < mythikinPCStorage.size(); ++i)
+    {
+        delete mythikinPCStorage[i]; // Each deposited mythikin in the PC is deleted.
+    }
+}
+
 {
     for (int i = 0; i < mythikinPCStorage.size(); ++i)
     {
