@@ -54,8 +54,7 @@ public:
 
     //SETTERS:
     void setName(string name) { this->name = name; }
-    void setWild(bool wild) { this->wild = true; }
-    void setTamed(bool wild) { this->wild = false; }
+    void setWild(bool wild) { this->wild = wild; }
     void setType(string type) { this->type = type; }
     void setLevel(int level) { this->level = level; }
     void setSpeed(int speed) { this->speed = speed; }

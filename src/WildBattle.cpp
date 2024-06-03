@@ -45,6 +45,7 @@ void WildBattle::catchMythikin(PC& playerPC) {
     Mythikin* capturedMythikin = myMythicube.getCapturedMythikin(); // Get the captured Mythikin (nullptr if not caught)
 
     if (capturedMythikin != nullptr) { // Check if the Mythikin was successfully caught
+        capturedMythikin->setWild(false); // Set the Mythikin to be tamed 
         // Add the Mythikin to the player's team if there's space
         if (playerTeam.getSize() < playerTeam.getMaxSize()) {
             playerTeam.addMythikin(*capturedMythikin);
