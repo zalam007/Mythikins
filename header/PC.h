@@ -13,6 +13,8 @@ class PC
 public:
     // Constructor needs no parameters.
 
+    ~PC(); // Destructor deletes all Mythikin in the PC.
+
     const vector<Mythikin *> getPCList() const { return mythikinPCStorage; } // Returns the list of Mythikin that are in the PC.
 
     void depositMythikin(Mythikin &mover, Team &userTeam); // Place a Mythikin into the PC and remove it from the team

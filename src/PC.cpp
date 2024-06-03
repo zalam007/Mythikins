@@ -8,13 +8,6 @@ PC::~PC() // Deletes entire PC storage.
     }
 }
 
-{
-    for (int i = 0; i < mythikinPCStorage.size(); ++i)
-    {
-        delete mythikinPCStorage[i]; // Each deposited mythikin in the PC is deleted.
-    }
-}
-
 void PC::depositMythikin(Mythikin &mover, Team &userTeam)
 {
     if (userTeam.getSize() > 1)
@@ -27,9 +20,9 @@ void PC::depositMythikin(Mythikin &mover, Team &userTeam)
     cerr << "You can not deposit your one Mythikin in your team!" << endl;
 }
 
-void PC::withdrawMythikin(const string name)
+void PC::withdrawMythikin(const string name, Team &userTeam)
 {
-    if (userTeam.getSize() <= user->getTeam().getMaxSize())
+    if (userTeam.getSize() <= userTeam.getMaxSize())
     {                                                      // Only able to withdraw as long as the team is not full.
         for (int i = 0; i < mythikinPCStorage.size(); ++i) // Iterates through the PC storage.
         {
