@@ -1,4 +1,12 @@
-#include "header/Mythishop.h"
+#include "../header/Mythishop.h"
+
+Mythishop::~Mythishop()
+{
+    for (int i = 0; i < stock.size(); ++i)
+    {
+        delete stock[i];
+    }
+}
 
 vector<Item *> Mythishop::getStock() const
 {
