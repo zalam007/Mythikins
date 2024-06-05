@@ -27,7 +27,7 @@ public:
 
     void setCatchRate(unsigned newRate) { catchRate = newRate; } // sets the catch rate
 
-    // Calls calculatedToBeCaught to be caught and uses the Mythicube to catch it, stores the Mythikin in the capturedMythikin pointer
+    // If calculatedToBeCaught==true catches the Wild-Mythikin and stores it in the capturedMythikin pointer
     void use(Mythikin &victim) override;
 
 private:

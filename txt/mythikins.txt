@@ -27,6 +27,6 @@ Sproutstone flora 1 50 99
 Rootgolem flora 2 69 109
 
 Fernfox flora 1 50 99
-Foxlgen flora 2 69 109
+Foxglen flora 2 69 109
 
 
