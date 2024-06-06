@@ -59,8 +59,8 @@ void WildBattle::catchMythikin(PC& playerPC) {
     }
 }
 
-// 25% chance of fleeing
+// 10% chance of fleeing
 bool WildBattle::Flee() {
-    int randomNum = rand() % 4; // Generate a random number between 0 and 3
-    return randomNum == 0; // If the random number is 0, return true (25% chance of fleeing)
+    int randomNum = rand() % 10; // Generate a random number between 0 and 9
+    return randomNum == 0; // If the random number is 0, return true (10% chance of fleeing)
 }
