@@ -44,7 +44,13 @@ void ItemShopMenu::printMenu(Mythishop &shop, Player &shopper)
         {
             cout << "\nInvalid input. Try again.\n"
                  << endl;
+            cout << "1. Buy" << endl;
+            cout << "2. Sell" << endl;
+            cout << "3. Leave\n"
+                 << endl;
         }
+        cin.clear();
+        cin.ignore();
     }
 }
 
@@ -100,6 +106,9 @@ void ItemShopMenu::buyMenu(Mythishop &shop, Player &shopper)
         cerr << "Invalid input.\n"
              << endl; // User did not enter a valid input.
     }
+    // Clear cin buffer
+    cin.clear();
+    cin.ignore();
 }
 
 void ItemShopMenu::sellMenu(Player &shopper)
@@ -148,4 +157,7 @@ void ItemShopMenu::sellMenu(Player &shopper)
         cerr << "Invalid input.\n"
              << endl; // User did not enter a valid input.
     }
+    // Clear cin buffer
+    cin.clear();
+    cin.ignore();
 }
