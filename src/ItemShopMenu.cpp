@@ -1,15 +1,9 @@
 #include "../header/ItemShopMenu.h"
 
-void ItemShopMenu::printMenu(Mythishop &shop, Player &shopper)
+ItemShopMenu::ItemShopMenu(Mythishop &shop, Player &shopper)
 {
     int command;
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    cout << "Welcome to the Mythishop! What service are you looking for?\n\n"
-         << endl;
-    cout << "1. Buy" << endl;
-    cout << "2. Sell" << endl;
-    cout << "3. Leave\n"
-         << endl;
+    printMenu();
 
     while (true)
     {
@@ -52,6 +46,17 @@ void ItemShopMenu::printMenu(Mythishop &shop, Player &shopper)
         cin.clear();
         cin.ignore();
     }
+}
+
+void ItemShopMenu::printMenu()
+{
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "Welcome to the Mythishop! What service are you looking for?\n\n"
+         << endl;
+    cout << "1. Buy" << endl;
+    cout << "2. Sell" << endl;
+    cout << "3. Leave\n"
+         << endl;
 }
 
 void ItemShopMenu::buyMenu(Mythishop &shop, Player &shopper)

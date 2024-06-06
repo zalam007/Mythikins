@@ -8,7 +8,9 @@ using namespace std;
 class ItemShopMenu : protected Menu
 {
 public:
-    void printMenu(Mythishop &shop, Player &shopper); // Main menu for item shop. User can sell or buy items.
+    ItemShopMenu(Mythishop &shop, Player &shopper); // Constructor
+
+    void printMenu(); // Main menu for item shop. User can sell or buy items.
 
 private:
     // Helper functions. Sub-menus of printMenu.
