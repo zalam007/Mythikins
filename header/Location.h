@@ -53,7 +53,7 @@ public:
         }
     }
 
-    void addLocation(const Location *&location)
+    void addLocation(Location *location)
     {
         neighborLocations.push_back(location);
     }

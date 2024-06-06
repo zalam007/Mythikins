@@ -97,7 +97,7 @@ bool Battle::isOver() {
         }
     }
 
-    return playerAllKnockedOut || npcAllKnockedOut; // Return true if either team is all knocked
+    return (playerAllKnockedOut || npcAllKnockedOut); // Return true if either team is all knocked
 }
 
 // Check if the player has won

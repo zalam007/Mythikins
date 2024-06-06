@@ -9,7 +9,7 @@
 class Battle {
 public:
     //Constructor to initialize the random seed and set teams
-    Battle(Team& playerTeam, Team npcTeam) : playerTeam(playerTeam), npcTeam(npcTeam) { srand(time(0)); }
+    Battle(Team& playerTeam, Team& npcTeam) : playerTeam(playerTeam), npcTeam(npcTeam) { srand(time(0)); }
     Battle(Team& playerTeam) : playerTeam(playerTeam) { srand(time(0)); }   // Constructor for WildBattle inheritance
 
     void stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move); // Player Mythikin attacks NPC Mythikin with move
@@ -19,6 +19,6 @@ public:
     virtual bool ifWon(); // Check if the player has won. Returns true if the NPC team is all knocked out and the player's team is still alive
 protected:
     Team& playerTeam;
-    Team npcTeam;
+    Team npcTeam; // Todo: This needs to be a reference type
     double getTypeAdvantage(const std::string& attackerType, const std::string& defenderType);  // Determine the attack type advantage damage multiplier
 };

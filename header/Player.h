@@ -11,10 +11,10 @@ using std::string;
 class Player : public Character
 {
 private:
-  Location currentLocation;
+  Location currentLocation = Location("No Name"); //Needed to have a default value for location, this was the only way
 
 public:
-  Player(const string &name = "No Name", const Location &currentLocation = Location(), Team team = Team(), const vector<Item*> &items = vector<Item*>(), int mythicoins = 0) {
+  Player(const string &name = "No Name",Location currentLocation = Location("No Name"),Team team = Team(), const vector<Item*> &items = vector<Item*>(), int mythicoins = 0) {
     Character::name = name;
     Character::team = team;
     Character::items = items;
@@ -26,8 +26,7 @@ public:
 
   const string &getName() const { return Character::name; }
   const Location &getLocation() const { return currentLocation; }
-  const Team &getTeam() const { return Character::team; }
-  const vector<Item*> &getInventory() const { return Character::items; }
+  vector<Item*> &getInventory() { return Character::items; }
 
 
   void setLocation(const Location &newLocation) { currentLocation = newLocation; }

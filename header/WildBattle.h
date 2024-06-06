@@ -15,6 +15,7 @@ public:
     void catchMythikin();   // catch the wild Mythikin with the Mythicube
     bool Flee();    // 25% chance of fleeing
 private:
+
     Mythikin& wildMythikin; // Wild Mythikin to battle
     Mythicube& myMythicube; // Reference to the player's Mythicube
 };
