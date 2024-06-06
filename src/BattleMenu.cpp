@@ -125,7 +125,7 @@ void BattleMenu::inventory(Player& mainChar) { //Need to talk about PC in wildBa
     cout << "Cannot catch an opponent's Mythikin" << endl; 
   } else {
     mainChar.getInventory().at(option-1)->use(mainChar.getTeam().getSlot(0)); //Use the item (Bug, health doesn't update)
-    mainChar.getInventory().at(option-1)->changeQuantity(mainChar.getInventory().at(option-1)->getQuantity() - 1); // Decrease quantity by 1
+    mainChar.getInventory().at(option-1)->setQuantity(mainChar.getInventory().at(option-1)->getQuantity() - 1); // Decrease quantity by 1
     if (mainChar.getInventory().at(option-1)->getQuantity() <= 0) { // If quantity is <= 0, remove it
       mainChar.removeItem(mainChar.getInventory().at(option-1)->getName());
     }
