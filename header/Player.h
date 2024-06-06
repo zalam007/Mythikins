@@ -2,10 +2,10 @@
 
 #include <string>
 #include <vector>
-#include "Location.h"
-#include "Mythikin.h"
-#include "Item.h"
-#include "Character.h"
+#include "../header/Location.h"
+#include "../header/Mythikin.h"
+#include "../header/Item.h"
+#include "../header/Character.h"
 using std::string;
 
 class Player : public Character

@@ -34,7 +34,7 @@ public:
         : name(name), wild(true), type(type), level(1), speed(speed), maxHP(HP), HP(HP), attackX(1) {}
 
     // Default constructor
-    Mythikin() : name("Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
+    Mythikin() : name("Default-Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
   
     //Copy Constructor
     Mythikin(const Mythikin& other) : name(other.name), wild(other.wild), type(other.type), level(other.level), speed(other.speed), maxHP(other.maxHP), HP(other.HP), attackX(other.attackX), attacks(other.attacks) {}
@@ -54,8 +54,7 @@ public:
 
     //SETTERS:
     void setName(string name) { this->name = name; }
-    void setWild(bool wild) { this->wild = true; }
-    void setTamed(bool wild) { this->wild = false; }
+    void setWild(bool wild) { this->wild = wild; }
     void setType(string type) { this->type = type; }
     void setLevel(int level) { this->level = level; }
     void setSpeed(int speed) { this->speed = speed; }

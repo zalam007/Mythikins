@@ -4,42 +4,70 @@
 
 Mythidex::Mythidex() {}
 
+//Read the Mythikins from the file and add them to the allMythikins vector
 void Mythidex::readMythikinsFromFile(const string& filename)
 {
-    ifstream file(filename);
-    if (file.is_open())
-    {
-        string name, type;
-        bool wild;
-        int level, speed, HP;
-        double attackX;
+    // Open the Mythikins file
+    ifstream mythikinsFile(filename);
+    
+    if (!mythikinsFile) {
+        cerr << "Error: Unable to open file " << filename << endl;  // Error message
+        return;
+    }
 
-        while (file >> name >> boolalpha >> wild >> type >> level >> speed >> HP >> attackX)
-        {
-            allMythikins.push_back(Mythikin(name, wild, type, level, speed, HP, attackX));
+    string name, type;
+    int level, speed, HP;
+    // Read the data from the file
+    while (mythikinsFile >> name >> type >> level >> speed >> HP)
+    {
+        if (mythikinsFile.fail()) {
+            cerr << "Error: Invalid data format in file " << filename << endl;  // Error message
+            return;
         }
 
-        file.close();
+        allMythikins.push_back(Mythikin(name, type, level, speed, HP)); // Construct Mythikin & add to the allMythikins vector
     }
+
+    if (!mythikinsFile.eof()) {
+        cerr << "Error: Failed to read the entire file " << filename << endl;   // Error message
+        return;
+    }
+
+    mythikinsFile.close();
 }
 
+//Read the moves from the file and add them to the allMoves vector
 void Mythidex::readMovesFromFile(const string& filename)
 {
+    // Open the moves file
     ifstream movesFile(filename);
-    if (movesFile.is_open())
-    {
-        string name, type;
-        int power, accuracy, MM;
+    if (!movesFile) {
+        cerr << "Error: Unable to open file " << filename << endl; // Error message
+        return;
+    }
 
-        while (movesFile >> name >> type >> power >> accuracy >> MM)
-        {
-            allMoves.push_back(Attack(name, type, power, accuracy, MM));
+    string name, type;
+    int power, accuracy, MM;
+    // Read the data from the file
+    while (movesFile >> name >> type >> power >> accuracy >> MM)
+    {
+        if (movesFile.fail()) {
+            cerr << "Error: Invalid data format in file " << filename << endl;  // Error message
+            return;
         }
 
-        movesFile.close();
+        allMoves.push_back(Attack(name, type, power, accuracy, MM));    // Construct Attack & add to the allMoves vector
     }
+
+    if (!movesFile.eof()) {
+        cerr << "Error: Failed to read the entire file " << filename << endl;   // Error message
+        return;
+    }
+
+    movesFile.close();
 }
 
+//Getters
 vector<Mythikin>& Mythidex::getAllMythikins() { return allMythikins; }
 
 void Mythidex::printAllMythikinNames() const {
@@ -50,7 +78,7 @@ void Mythidex::printAllMythikinNames() const {
 
 vector<Attack>& Mythidex::getAllMoves() { return allMoves; }
 
-void Mythidex::printAllMoves() const {
+void Mythidex::printAllMoveNames() const {
     for (const Attack& move : allMoves) {
         cout << move.getName() << endl;
     }

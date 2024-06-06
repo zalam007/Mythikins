@@ -13,7 +13,11 @@ private:
     vector<NPC> NPCSpawn;
 
 public:
+    Location() {}
+
     Location(const string &name) : name(name) {}
+
+    Location(const string &name, const vector<Location *> &neighbors) : name(name), neighborLocations(neighbors) {}
 
     Location(const string &name, const vector<Location *> &neighbors, const vector<NPC> &npcs) : name(name), neighborLocations(neighbors), NPCSpawn(npcs) {}
 
@@ -42,31 +46,12 @@ public:
         NPCSpawn.push_back(npc);
     }
 
-    void removeNPC(const string &name)
-    {
-        for (int i = 0; i < NPCSpawn.size(); ++i)
-        {
-            if (NPCSpawn[i].getName() == name)
-            {
-                NPCSpawn.erase(NPCSpawn.begin() + i);
-            }
-        }
-    }
+    void removeNPC(const string &name);
 
     void addLocation(Location *location)
     {
         neighborLocations.push_back(location);
     }
 
-    void removeLocation(const string &name)
-    {
-        for (int i = 0; i < neighborLocations.size(); ++i)
-        {
-            if (neighborLocations[i]->getName() == name)
-            {
-                delete neighborLocations[i];
-                neighborLocations.erase(neighborLocations.begin() + i);
-            }
-        }
-    }
+    void removeLocation(const string &name);
 };

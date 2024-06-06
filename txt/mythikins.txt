@@ -1,3 +1,32 @@
-Blazehoof false fire 1 70 100 1.0
-Infernocolt false fire 2 80 110 1.0
-Magmamane false fire 2 90 120 1.0
+Blazehoof magma 1 50 100
+Infernocolt magma 2 70 110
+Magmamane magma 3 90 120
+
+Cindercoon magma 1 50 99
+Pyrcoonito magma 2 69 109
+
+
+
+Aquafin aqua 1 50 100
+Riverkin aqua 2 70 110
+Hyrdazor aqua 3 90 120
+
+Forstfletch aqua 1 50 99
+Claciquil aqua 2 69 109
+
+
+
+Stemlet flora 1 50 100
+Herbivine flora 2 70 110
+Vinebeast flora 3 90 120
+
+Bloomshade flora 1 50 99
+Lunarbloom flora 2 69 109
+
+Sproutstone flora 1 50 99
+Rootgolem flora 2 69 109
+
+Fernfox flora 1 50 99
+Foxglen flora 2 69 109
+
+
