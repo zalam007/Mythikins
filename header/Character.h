@@ -16,7 +16,11 @@ class Character {
     vector<Item*> items;
     int mythicoins = 0;
   public:
-    ~Character();
+    ~Character() { 
+      for (unsigned i = 0; i < items.size(); i++) {
+        delete items.at(i);
+      }
+    }
 
     string getName() const {return name;}
     Team& getTeam() {return team;}
