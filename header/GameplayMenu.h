@@ -16,7 +16,7 @@ private:
     Mythidex mythidex;
     void printLocations();
     void goTo(Location *destination);
-    void viewInventory() const;
+    void viewInventory();
     void viewMythidex() const;
     void viewTeam();
 };
