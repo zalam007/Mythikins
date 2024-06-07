@@ -2,7 +2,7 @@
 
 bool WildBattle::isOver() {
     // Return true if the wild Mythikin was successfully caught
-    if (myMythicube.getCapturedMythikin() != nullptr)
+    if (isCaught)
         return true;
     
     // Check if all player's Mythikins are knocked out
@@ -24,7 +24,7 @@ bool WildBattle::isOver() {
 
 bool WildBattle::ifWon() {
     // Return true if the wild Mythikin was successfully caught
-    if (myMythicube.getCapturedMythikin() != nullptr)
+    if (isCaught)
         return true;
 
     // Check if any player's Mythikins are still alive
@@ -40,12 +40,13 @@ bool WildBattle::ifWon() {
 }
 
 //Add Mythikin to player's team if caught, if the team is full add the Mythikin to the PC
-void WildBattle::catchMythikin(PC& playerPC) {
+void WildBattle::catchMythikin(PC& playerPC, Mythicube& myMythicube) {
     myMythicube.use(wildMythikin); // Call the use method of Mythicube to attempt catching the wild Mythikin
     Mythikin* capturedMythikin = myMythicube.getCapturedMythikin(); // Get the captured Mythikin (nullptr if not caught)
 
     if (capturedMythikin != nullptr) { // Check if the Mythikin was successfully caught
         capturedMythikin->setWild(false); // Set the Mythikin to be tamed 
+        isCaught=true; // Set the isCaught flag to true
         // Add the Mythikin to the player's team if there's space
         if (playerTeam.getSize() < playerTeam.getMaxSize()) {
             playerTeam.addMythikin(*capturedMythikin);
@@ -59,8 +60,8 @@ void WildBattle::catchMythikin(PC& playerPC) {
     }
 }
 
-// 25% chance of fleeing
+// 10% chance of fleeing
 bool WildBattle::Flee() {
-    int randomNum = rand() % 4; // Generate a random number between 0 and 3
-    return randomNum == 0; // If the random number is 0, return true (25% chance of fleeing)
+    int randomNum = rand() % 10; // Generate a random number between 0 and 9
+    return randomNum == 0; // If the random number is 0, return true (10% chance of fleeing)
 }
