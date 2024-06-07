@@ -5,6 +5,10 @@ int WildLocation::getSpawnRate() const
     return spawnRate;
 }
 
+vector<Mythikin> WildLocation::getMythikinSpawn() const {
+    return mythikinSpawn;
+}
+
 void WildLocation::addMythikin(const Mythikin &name)
 {
     mythikinSpawn.push_back(name);
