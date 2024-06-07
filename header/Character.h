@@ -13,7 +13,7 @@ class Character {
     string name;
     vector<Mythikin> team;
     vector<Item*> items;
-    int mythicoins;
+    int mythicoins = 0;
   public:
     string getName() const {return name;}
     const vector<Mythikin>& getTeam() const {return team;}
