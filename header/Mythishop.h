@@ -9,6 +9,8 @@ private:
     vector<Item *> stock;
 
 public:
+    Mythishop(const string &name) : Location(name) {}
+
     Mythishop(const string &name, const vector<Location *> &neighbors, const vector<Item *> stock) : Location(name, neighbors), stock(stock) {}
 
     Mythishop(const string &name, const vector<Location *> &neighbors, const vector<NPC> &npcs, const vector<Item *> stock) : Location(name, neighbors, npcs), stock(stock) {}
