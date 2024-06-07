@@ -3,6 +3,13 @@
 
 using std::string;
 
+
+Character::~Character() {
+  for (unsigned i = 0; i < items.size(); i++) {
+    delete items.at(i);
+  }
+}
+
 void Character::useItem(const string& itemBeingUsed, Mythikin& recipient) { //Feel like it'd be better to use the name of the item here
   for (unsigned i = 0; i < items.size(); i++) {
     if (items.at(i)->getName() == itemBeingUsed) { //Check if name of param matches name in inventory

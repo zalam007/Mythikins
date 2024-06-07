@@ -3,9 +3,9 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
-#include "../mythikin.h"
-#include "./Item.h"
-#include "./Character.h"
+#include "Mythikin.h"
+#include "Item.h"
+#include "Character.h"
 
 using std::string;
 
