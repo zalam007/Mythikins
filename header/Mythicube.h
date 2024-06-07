@@ -2,7 +2,7 @@
 
 #pragma once
 
-class Mythicube : protected Item
+class Mythicube : public Item
 {
     unsigned catchRate;                   // int of how easy it is to catch a Mythikin. 1 is default (catch based on health and chance), 2 is half is likely
     Mythikin *capturedMythikin = nullptr; // holds the captured Mythikin if successfully caught (nullptr if not)

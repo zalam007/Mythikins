@@ -5,7 +5,20 @@
 using namespace std;
 
 BattleMenu::BattleMenu(Player& mainChar, NPC& opponentNPC) {
+  this->mainChar = mainChar;
+  this->opponentNPC = opponentNPC;
+}
+
+BattleMenu::~BattleMenu() {}
+
+
+void BattleMenu::gameplay() {
   Battle playerVsNPC = Battle(mainChar.getTeam(), opponentNPC.getTeam());
+
+  cout << "A battle is starting...\n" << endl;
+  cout << mainChar.getName() << " chooses " << mainChar.getTeam().getSlot(0).getName() << "." << endl << endl;
+  cout << opponentNPC.getName() << " chooses " << opponentNPC.getTeam().getSlot(0).getName() << "." << endl << endl;
+
   while(!playerVsNPC.isOver()) {
 
     if (mainChar.getTeam().getSlot(0).isKnocked()) { //Checks if main Mythikin was knocked, prompts swap if yes
@@ -59,8 +72,19 @@ BattleMenu::BattleMenu(Player& mainChar, NPC& opponentNPC) {
     cout << "\n" << opponentNPC.getName() << "'s turn: " << endl;
     playerVsNPC.AIAttack(opponentNPC.getTeam().getSlot(0), mainChar.getTeam().getSlot(0));
 
-    cout << "\n" << mainChar.getTeam().getSlot(0).getName() << "'s health: " << mainChar.getTeam().getSlot(0).getHP();
-    cout << "\nOpponent's " << opponentNPC.getTeam().getSlot(0).getName() << "'s health: " << opponentNPC.getTeam().getSlot(0).getHP() << endl << endl;
+    cout << "\n" << mainChar.getTeam().getSlot(0).getName() << "'s health: ";
+    if (mainChar.getTeam().getSlot(0).getHP() < 0) {
+      cout << "0" << endl << endl;
+    } else {
+      cout << mainChar.getTeam().getSlot(0).getHP() << endl << endl;
+    }
+
+    cout << "\nOpponent's " << opponentNPC.getTeam().getSlot(0).getName() << "'s health: ";
+    if (opponentNPC.getTeam().getSlot(0).getHP() < 0) {
+      cout << "0" << endl << endl;
+    } else {
+      cout << opponentNPC.getTeam().getSlot(0).getHP() << endl << endl;
+    }
 
     
   }
@@ -71,24 +95,13 @@ BattleMenu::BattleMenu(Player& mainChar, NPC& opponentNPC) {
   } else {
     cout << "You lost" << endl << endl;
   }
-
-}
-BattleMenu::BattleMenu(Player& mainChar, Mythikin& wildMythikin) {
-  // Battle playerVsWild = Battle(mainChar.getTeam(), wildMythikin); // Talk about redoing WildBattle
 }
 
-BattleMenu::~BattleMenu() {}
 
 
 void BattleMenu::printMenu() {
   cout << "Battle Menu: " << endl;
   cout << "(1) Attack\n(2) Inventory\n(3) Swap " << endl;
-}
-
-void BattleMenu::printWildBattleMenu() {
-  cout << "Wild ";
-  printMenu();
-  cout << "(4) Flee " << endl; 
 }
 
 void BattleMenu::attack(Battle& currBattle, Player& mainChar, NPC& opponentNPC) { 
@@ -127,10 +140,9 @@ void BattleMenu::inventory(Player& mainChar) { //Need to talk about PC in wildBa
   } 
 
   if (mainChar.getInventory().at(option-1)->getName() == "Mythicube") {//Talk about how to implement this going forward
-    cout << "Cannot catch an opponent's Mythikin" << endl; 
+    cout << "You can't catch your opponent's mythikin." << endl << endl;
   } else {
     mainChar.getInventory().at(option-1)->use(mainChar.getTeam().getSlot(0)); //Use the item (Bug, health doesn't update)
-    mainChar.getInventory().at(option-1)->setQuantity(mainChar.getInventory().at(option-1)->getQuantity() - 1); // Decrease quantity by 1
     if (mainChar.getInventory().at(option-1)->getQuantity() <= 0) { // If quantity is <= 0, remove it
       mainChar.removeItem(mainChar.getInventory().at(option-1)->getName());
     }
@@ -155,10 +167,6 @@ void BattleMenu::swap(Player& mainChar) {
     cin.ignore(256, '\n');
   }
   mainChar.getTeam().swapSlots(0, option); 
-}
-
-void BattleMenu::flee(WildBattle& currBattle) { //Stubbed
-  cout << "Not Done Yet: flee()" << endl;
 }
 
 
