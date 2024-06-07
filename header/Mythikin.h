@@ -46,8 +46,8 @@ public:
     string getType() const { return type; }
     int getLevel() const { return level; }
     int getSpeed() const { return speed; }
-    int getHP() const { return HP; }
     int getMaxHP() const { return maxHP; }
+    int getHP() const { return HP; }
     bool isKnocked() const { return HP <= 0; }
     int getAttackX() const { return attackX; }
     vector<Attack> getAttacks() const { return attacks; }
