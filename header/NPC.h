@@ -21,7 +21,8 @@ class NPC : public Character {
       this->dialogue = dialogue;
     }
 
-    
+    ~NPC() { Character::~Character(); }
+
     const string& talk(); //Changed this to return string, made more sense
     // void useItems(); TODO: Add later if time
 

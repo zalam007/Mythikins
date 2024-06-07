@@ -22,7 +22,7 @@ public:
     this->currentLocation = currentLocation;
   }
 
-  
+  ~Player() {Character::~Character();}
 
   const string &getName() const { return Character::name; }
   const Location &getLocation() const { return currentLocation; }
