@@ -8,7 +8,7 @@ Mythidex::Mythidex() {}
 void Mythidex::readMythikinsFromFile(const string& filename)
 {
     // Open the Mythikins file
-    ifstream mythikinsFile(filename);
+    ifstream mythikinsFile(filename);   //txt/mythikins.txt
     
     if (!mythikinsFile) {
         cerr << "Error: Unable to open file " << filename << endl;  // Error message
@@ -40,7 +40,7 @@ void Mythidex::readMythikinsFromFile(const string& filename)
 void Mythidex::readMovesFromFile(const string& filename)
 {
     // Open the moves file
-    ifstream movesFile(filename);
+    ifstream movesFile(filename);   //txt/moves.txt
     if (!movesFile) {
         cerr << "Error: Unable to open file " << filename << endl; // Error message
         return;

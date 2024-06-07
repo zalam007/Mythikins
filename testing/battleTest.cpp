@@ -1,6 +1,10 @@
 using namespace std;
 #include <iostream>
-#include "../header/Battle.h"
+#include "header/Battle.h"
+#include "header/Mythikin.h"
+#include "header/Attack.h"
+#include "header/Team.h"
+
 //g++ src/battleTest.cpp src/Battle.cpp src/Team.cpp
 
 int main() {
