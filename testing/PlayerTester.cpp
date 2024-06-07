@@ -10,7 +10,7 @@ TEST(PlayerTestSuite, getNameTestDefaultConstructor) {
 
 
 TEST(PlayerTestSuite, getNameTestConstructorWithParam) {
-  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100, 50);
+  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100);
   Team testTeam;
   testTeam.addMythikin(testKin);
 
@@ -24,7 +24,7 @@ TEST(PlayerTestSuite, getNameTestConstructorWithParam) {
 
 
 TEST(PlayerTestSuite, getTeamTest) {
-  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100, 50);
+  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100);
   Team testTeam;
   testTeam.addMythikin(testKin);
 
@@ -38,7 +38,7 @@ TEST(PlayerTestSuite, getTeamTest) {
 }
 
 TEST(PlayerTestSuite, getInventoryTest) {
-  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100, 50);
+  Mythikin testKin = Mythikin("TestKin", "TestType", 1, 20, 100);
   Team testTeam;
   testTeam.addMythikin(testKin);
 

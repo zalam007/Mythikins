@@ -49,7 +49,7 @@ public:
     int getMaxHP() const { return maxHP; }
     int getHP() const { return HP; }
     bool isKnocked() const { return HP <= 0; }
-    int getAttackX() const { return attackX; }
+    double getAttackX() const { return attackX; }
     vector<Attack> getAttacks() const { return attacks; }
 
     //SETTERS:
@@ -63,6 +63,6 @@ public:
         if(HP >= maxHP) { cerr << "set HP over max, set to max"; this->HP = maxHP; }    //HP set to high
         else { this->HP = HP; } // HP set
     }
-    void setAttackX(int attackX) { this->attackX = attackX; }
+    void setAttackX(double attackX) { this->attackX = attackX; }
     void addAttack(Attack attack) { attacks.push_back(attack); }
 };
