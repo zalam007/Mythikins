@@ -4,6 +4,10 @@
 #include "../src/WildLocation.cpp"
 #include "../src/Mythishop.cpp"
 #include "../src/Mythicenter.cpp"
+#include "../header/Item.h"
+#include "../src/Potion.cpp"
+#include "../src/Mythicube.cpp"
+#include "../src/Character.cpp"
 
 TEST(LocationsTests, testGetName) {
     Location village("village");
@@ -93,6 +97,37 @@ TEST(WildLocationTests, testRemoveMythikin) {
     forest.removeMythikin("Blazehoof");
     EXPECT_EQ(forest.getMythikinSpawn().size(), 0);
 }
+
+TEST(MythishopTests, testGetStock) {
+    Mythishop mythishop("Axel's Shop");
+    Item *potion = new Potion;
+    mythishop.addItem(potion);
+    EXPECT_EQ(mythishop.getStock()[0]->getName(), "Potion");
+}
+
+TEST(MythishopTests, testaddItem) {
+    Mythishop mythishop("Zamikin's Shop");
+    Item *mythicube = new Mythicube;
+    mythishop.addItem(mythicube);
+    EXPECT_EQ(mythishop.getStock()[0]->getName(), "Mythicube");
+}
+
+TEST(MythishopTests, testRemoveItem) {
+    Mythishop mythishop("Zamikin's Shop");
+    Item *mythicube = new Mythicube;
+    mythishop.addItem(mythicube);
+    mythishop.removeItem("Mythicube");
+    EXPECT_EQ(mythishop.getStock().size(), 0);
+}
+
+
+TEST(MythishopTests, testgetItem) {
+    Mythishop mythishop("Jesse's Shop");
+    Item *mythicube = new Mythicube;
+    mythishop.addItem(mythicube);
+    EXPECT_EQ(mythishop.getItem(0)->getName(), "Mythicube");
+}
+
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
