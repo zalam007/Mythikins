@@ -47,7 +47,9 @@
  >
  > https://drive.google.com/file/d/16k-MWYpmxMWjBg1lDiRgTIJrvTYjwJw3/view?usp=sharing
  >
- >  ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/4880e04c-0c0b-4df2-8743-096168fbb822)
+> ![Screenshot 2024-06-07 001955](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/134023272/74e3d6dd-5e62-4fb2-9563-cc4350fda04b)
+> ![Screenshot 2024-06-07 002018](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/134023272/69bd20cc-895d-4c10-ade4-000f9b789cb8)
+> ![Screenshot 2024-06-07 002036](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/134023272/8d01f76e-de39-4179-8532-b76cc40836a5)
 
  >     * What SOLID principle(s) did you apply?
  >
