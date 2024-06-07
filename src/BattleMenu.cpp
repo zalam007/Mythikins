@@ -66,6 +66,11 @@ BattleMenu::BattleMenu(Player& mainChar, NPC& opponentNPC) {
   }
 
   //TODO: Print out what you gained from winning
+  if (playerVsNPC.ifWon()) {
+    cout << "You Won!" << endl << endl;
+  } else {
+    cout << "You lost" << endl << endl;
+  }
 
 }
 BattleMenu::BattleMenu(Player& mainChar, Mythikin& wildMythikin) {
