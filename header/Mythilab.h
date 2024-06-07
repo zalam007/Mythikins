@@ -1,7 +1,7 @@
 #include "Location.h"
 #include "Mythikin.h"
 
-class Mythilab : protected Location
+class Mythilab : public Location
 {
 private:
     vector<Mythikin> starters;

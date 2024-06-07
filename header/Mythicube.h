@@ -1,6 +1,7 @@
+#pragma once
+
 #include "Item.h"
 
-#pragma once
 
 class Mythicube : public Item
 {
@@ -20,6 +21,7 @@ public:
 
     // Getters
     unsigned getCatchRate() const { return catchRate; } // returns the catch rate
+    
     Mythikin *getCapturedMythikin() const { return capturedMythikin; } // returns nullpointer if no Mythikin
 
     // Setters
