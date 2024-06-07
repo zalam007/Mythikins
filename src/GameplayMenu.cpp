@@ -91,7 +91,8 @@ void GameplayMenu::goTo(Location *destination)
     mainCharacter.setLocation(*destination);
 }
 
-void GameplayMenu::viewInventory() 
+
+void GameplayMenu::viewInventory()
 {
     cout << "Inventory" << endl;
     cout << "_________" << endl;
