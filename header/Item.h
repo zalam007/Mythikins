@@ -1,7 +1,8 @@
 #pragma once
 
-#include <string>
+#include <string> 
 #include "Mythikin.h"
+
 
 using namespace std;
 
@@ -43,7 +44,9 @@ public:
         if (newCap >= quantity)
         {
             capacity = newCap;
+            return;
         }
+        capacity = getQuantity();
     }
 
     void setPrice(unsigned newPrice) { price = newPrice; }
