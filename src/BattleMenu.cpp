@@ -157,7 +157,7 @@ void BattleMenu::swap(Player& mainChar) {
 
   cout << "Select a Mythikin to swap with: " << endl;
   for (int i = 1; i < mainChar.getTeam().getSize(); i++) {
-    cout << "(" << i << ") "<< mainChar.getTeam().getSlot(i).getName() << endl; //Prints out team minus first pokemon, since that is the main one
+    cout << "(" << i << ") "<< mainChar.getTeam().getSlot(i).getName() << endl; //Prints out team minus first mythikin, since that is the main one
   }
   
   int option;
