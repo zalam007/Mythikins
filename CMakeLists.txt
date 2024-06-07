@@ -15,6 +15,10 @@ ADD_EXECUTABLE(AttackTester
     testing/AttackTester.cpp
 )
 
+ADD_EXECUTABLE(LocationTester
+    testing/LocationTester.cpp
+)
+
 TARGET_LINK_LIBRARIES(ItemTests gtest)
 TARGET_COMPILE_DEFINITIONS(ItemTests PRIVATE gtest_disable_pthreads=ON)
 
@@ -23,3 +27,6 @@ TARGET_COMPILE_DEFINITIONS(MythikinTester PRIVATE gtest_disable_pthreads=ON)
 
 TARGET_LINK_LIBRARIES(AttackTester gtest)
 TARGET_COMPILE_DEFINITIONS(AttackTester PRIVATE gtest_disable_pthreads=ON)
+
+TARGET_LINK_LIBRARIES(LocationTester gtest)
+TARGET_COMPILE_DEFINITIONS(LocationTester PRIVATE gtest_disable_pthreads=ON)
