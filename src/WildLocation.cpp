@@ -1,8 +1,12 @@
-#include "header/WildLocation.h"
+#include "../header/WildLocation.h"
 
 int WildLocation::getSpawnRate() const
 {
     return spawnRate;
+}
+
+vector<Mythikin> WildLocation::getMythikinSpawn() const {
+    return mythikinSpawn;
 }
 
 void WildLocation::addMythikin(const Mythikin &name)
