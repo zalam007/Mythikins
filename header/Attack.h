@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 // Attacks that Mythikin can use
@@ -33,5 +34,9 @@ public:
     void setType(const string &type) { this->type = type; }
     void setPower(int power) { this->power = power; }
     void setAccuracy(int accuracy) { this->accuracy = accuracy; }
-    void setMM(int MM) { this->MM = MM; }
+    void setMaxMM(int maxMM) { this->maxMM = maxMM; }
+    void setMM(int MM) {  
+        if(MM >= maxMM) { cerr << "set MM over max, set to max"; this->MM = maxMM; }
+        else { this->MM = MM; }
+    }
 };
