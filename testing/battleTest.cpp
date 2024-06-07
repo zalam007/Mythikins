@@ -1,6 +1,6 @@
 using namespace std;
 #include <iostream>
-#include "../header/Battle.h"
+#include "header/Battle.h"
 //g++ src/battleTest.cpp src/Battle.cpp src/Team.cpp
 
 int main() {
