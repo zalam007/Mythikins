@@ -1,6 +1,6 @@
 #include "Location.h"
 
-class Gym: protected Location {
+class Gym: public Location {
 private:
     bool defeated;
 public:

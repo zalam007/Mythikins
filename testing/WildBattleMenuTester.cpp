@@ -1,6 +1,7 @@
 #include "../header/BattleMenu.h"
+#include "../header/WildBattleMenu.h"
+#include "../header/PC.h"
 #include "../header/Potion.h"
-#include "../header/Mythicube.h"
 
 
 int main() {
@@ -38,16 +39,21 @@ int main() {
   mainChar.addItem(potion);
   mainChar.addItem(strongPotion);
   mainChar.addItem(mythicube);
+  
+  PC storedMythikin = PC(); 
 
-  vector<string> dialogue;
-  Team npcTeam = Team();
-  npcTeam.addMythikin(squirtle);
-  npcTeam.addMythikin(bulbasaur);
+  // vector<string> dialogue;
+  // Team npcTeam = Team();
+  // npcTeam.addMythikin(squirtle);
+  // npcTeam.addMythikin(bulbasaur);
 
-  NPC opp = NPC("Axel", npcTeam, dialogue, playerInventory, 20);
+  // NPC opp = NPC("Axel", npcTeam, dialogue, playerInventory, 20);
 
-  BattleMenu battle = BattleMenu(mainChar, opp);
-  battle.gameplay();
+  // BattleMenu battle = BattleMenu(mainChar, opp);
+  // battle.gameplay();
+
+  WildBattleMenu wildBattle = WildBattleMenu(mainChar, charmander, storedMythikin);
+  wildBattle.wildGameplay();
   
   
 

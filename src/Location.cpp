@@ -1,4 +1,4 @@
-#include "header/Location.h"
+#include "../header/Location.h"
 
 void Location::removeNPC(const string &name)
 {

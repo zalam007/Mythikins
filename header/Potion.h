@@ -2,7 +2,7 @@
 
 #pragma once
 
-class Potion : protected Item
+class Potion : public Item
 {
     double healPowerPercent;
 
@@ -16,5 +16,5 @@ public:
 
     void setHealPowerPercent(int newHealPower) { healPowerPercent = newHealPower; }
 
-    void use(Mythikin &patient);
+    virtual void use(Mythikin &patient);
 };
