@@ -16,9 +16,11 @@ class Character {
     vector<Item*> items;
     int mythicoins;
   public:
+    ~Character();
+
     string getName() const {return name;}
     Team& getTeam() {return team;}
-    const vector<Item*>& getInventory() const {return items;}
+    vector<Item*>& getInventory() {return items;}
     int getCoins() const { return mythicoins; }
 
     void setName(const string& newName) { name = newName; }

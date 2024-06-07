@@ -13,9 +13,11 @@ public:
     bool isOver() override; // True if the player's team is all knocked out, or the wild Mythikin is knocked out or caught
     bool ifWon() override;  // True if isOver is true and the player has at least one Mythikin alive or caught the wild Mythikin
 
-    void catchMythikin(PC& playerPC, Mythicube& myMythicube);   // catch the wild Mythikin with the Mythicube (store in team, if full in PC)
+    bool catchMythikin(PC& playerPC, Mythicube& myMythicube);   // catch the wild Mythikin with the Mythicube (store in team, if full in PC)
     bool Flee();    // 10% chance of fleeing (returnig true)
-private:
-    bool isCaught;    // Sees if the Mythicube was successful
+
+
+    bool isCaught = false; // Sees if the Mythicube was successful
+private:      
     Mythikin& wildMythikin; // Wild-Mythikin to battle
 };

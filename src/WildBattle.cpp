@@ -6,20 +6,31 @@ bool WildBattle::isOver() {
         return true;
     
     // Check if all player's Mythikins are knocked out
-    bool playerAllKnockedOut = true;
-    for (int i = 0; i < Battle::playerTeam.getSize(); ++i) {
-        if (Battle::playerTeam.getSlot(i).getHP() > 0) {
-            playerAllKnockedOut = false;
-            break;
+    // bool playerAllKnockedOut = true;
+    // for (int i = 0; i < playerTeam.getSize(); i++) {
+    //     cout << "team size: "<< playerTeam.getSize() << endl;
+    //     if (playerTeam.getSlot(i).getHP() > 0) {
+    //         cout << playerTeam.getSlot(i).getName() << " is alive" << endl;
+    //         cout << "Value of i: " << i << endl;
+    //         playerAllKnockedOut = false;
+    //     }
+    // }
+
+    // Check if the wild Mythikin is knocked out
+    // bool npcKnockedOut = true;
+    if (wildMythikin.isKnocked()) {
+        return true;
+    }
+
+    for (int i = 0; i < playerTeam.getSize(); i++) {
+        if (playerTeam.getSlot(i).getHP() > 0) {
+            return false;
         }
     }
 
-    // Check if the wild Mythikin is knocked out
-    bool npcKnockedOut = true;
-    if (wildMythikin.getHP() <= 0)
-        npcKnockedOut = false;
+    return true;
 
-    return playerAllKnockedOut || npcKnockedOut; // Return true if either party is all knocked
+    // return playerAllKnockedOut || npcKnockedOut; // Return true if either party is all knocked
 }
 
 bool WildBattle::ifWon() {
@@ -40,7 +51,7 @@ bool WildBattle::ifWon() {
 }
 
 //Add Mythikin to player's team if caught, if the team is full add the Mythikin to the PC
-void WildBattle::catchMythikin(PC& playerPC, Mythicube& myMythicube) {
+bool WildBattle::catchMythikin(PC& playerPC, Mythicube& myMythicube) {
     myMythicube.use(wildMythikin); // Call the use method of Mythicube to attempt catching the wild Mythikin
     Mythikin* capturedMythikin = myMythicube.getCapturedMythikin(); // Get the captured Mythikin (nullptr if not caught)
 
@@ -53,11 +64,12 @@ void WildBattle::catchMythikin(PC& playerPC, Mythicube& myMythicube) {
         } 
         // Add the Mythikin to the PC if the team is full
         else {
-            PC playerPC;
             playerPC.placeMythikinToPC(*capturedMythikin);
         }
         myMythicube.emptyMythicube(); // Empty the Mythicube after adding the Mythikin to the team or PC
+        return true;
     }
+    return false;
 }
 
 // 10% chance of fleeing

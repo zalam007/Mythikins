@@ -1,4 +1,4 @@
-#include "header/Mythicenter.h"
+#include "../header/Mythicenter.h"
 
 PC Mythicenter::getPC()
 {
@@ -10,10 +10,10 @@ void Mythicenter::changePC(PC &newPC)
     playerPC = newPC;
 }
 
-void Mythicenter::healMythikins(const vector<Mythikin> &team)
+void Mythicenter::healMythikins(vector<Mythikin> &team)
 {
     for (int i = 0; i < team.size(); ++i)
     {
-        team[i].setHP(team[i].getMaxHP);
+        team[i].setHP(team[i].getMaxHP());
     }
 }
