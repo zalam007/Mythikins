@@ -107,6 +107,18 @@
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/8168753f-7844-4f1c-af10-53190ab75285)
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/5ebf4038-6358-4531-a153-cbfe57aa6a75)
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/6f5804d0-73af-49a2-a5fd-d841c2e8f1b8)
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/1159220e-ae83-4ead-84b4-fdbc2b106627)
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/41659cd2-f393-4637-b38a-5606f7d38811)
+> ![image](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/157668326/cdbbf053-1e91-4a4e-bcfd-2a65c17861e5)
+
+
+
+
+
+
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
