@@ -121,9 +121,13 @@
 
  ## Installation/Usage
  > Installation: Run "git clone --recursive https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133.git" in a bash terminal
+> 
  > In the terminal, run "g++ demoMain.cpp src/*.cpp -o MythikinDemo" to compile the game.
+>
  > Run "./MythikinDemo" to run the executable"
 > 
  ## Testing
  > Our project was tested initially with small tests within the branch with basic tests in dummy mains, and as we began to integrate our branches, we wrote Unit tests with the google test framework and ran tests in our main branch to ensure that each of classes integrated properly.
+ >
+ > We each created unit tests in our own branches and upon merging these tests with the main branch, edited the CMakeList.txt file to create separate executables for each of our test suites.
  
