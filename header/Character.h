@@ -14,7 +14,7 @@ class Character {
     string name;
     Team team;
     vector<Item*> items;
-    int mythicoins;
+    int mythicoins = 0;
   public:
     ~Character();
 
