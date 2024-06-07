@@ -3,7 +3,7 @@
 #include "Location.h"
 #include "Item.h"
 
-class Mythishop : protected Location
+class Mythishop : public Location
 {
 private:
     vector<Item *> stock;

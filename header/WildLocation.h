@@ -4,7 +4,7 @@
 #include "WildBattle.h"
 #include "Battle.h"
 
-class WildLocation : protected Location
+class WildLocation : public Location
 {
 private:
     vector<Mythikin> mythikinSpawn;

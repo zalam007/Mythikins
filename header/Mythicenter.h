@@ -3,7 +3,7 @@
 #include "PC.h"
 #include "Location.h"
 
-class Mythicenter : protected Location
+class Mythicenter : public Location
 {
 private:
     PC playerPC;
