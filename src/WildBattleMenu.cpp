@@ -42,6 +42,8 @@ void WildBattleMenu::wildGameplay() {
       if (playerVsMythikin.isCaught == true) {
         cout << "You caught the " << wildMythikin.getName() << "!" << endl << endl;
         return;
+      } else {
+        cout << wildMythikin.getName() << " escaped the mythicube." << endl << endl;
       }
       break;
     
