@@ -25,6 +25,7 @@ public:
 
   const string &getName() const { return Character::name; }
   const Location &getLocation() const { return currentLocation; }
+  Team &getTeam()  { return Character::team; }
   vector<Item*> &getInventory() { return Character::items; }
 
 

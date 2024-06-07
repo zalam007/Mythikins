@@ -28,7 +28,7 @@ void Team::addMythikin(Mythikin newMember) {
 }
 
 void Team::removeMythikin(const string& name) {
-  for (unsigned i = 0; i < teamSize; i++) {
+  for (int i = 0; i < teamSize; i++) {
     if(team[i].getName() == name)
     {
       for (int j = i; j < teamSize - 1; j++) { // Deletes the element at i

@@ -2,6 +2,11 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
 ADD_SUBDIRECTORY(googletest)
 
+ADD_EXECUTABLE(PlayerTester
+    testing/PlayerTester.cpp
+    src/
+)
+
 #Add tests here as needed
 ADD_EXECUTABLE(ItemTester
     testing/ItemTester.cpp
@@ -67,3 +72,7 @@ TARGET_COMPILE_DEFINITIONS(LocationTester PRIVATE gtest_disable_pthreads=ON)
 
 TARGET_LINK_LIBRARIES(MythidexTester gtest)
 TARGET_COMPILE_DEFINITIONS(MythidexTester PRIVATE gtest_disable_pthreads=ON)
+
+TARGET_LINK_LIBRARIES(PlayerTester gtest)
+TARGET_COMPILE_DEFINITIONS(PlayerTester PRIVATE gtest_disable_pthreads=ON)
+
