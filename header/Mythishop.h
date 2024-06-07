@@ -13,6 +13,8 @@ public:
 
     Mythishop(const string &name, const vector<Location *> &neighbors, const vector<NPC> &npcs, const vector<Item *> stock) : Location(name, neighbors, npcs), stock(stock) {}
 
+    ~Mythishop();
+
     vector<Item *> getStock() const;
 
     void addItem(Item *item);
