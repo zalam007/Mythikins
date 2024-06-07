@@ -157,11 +157,15 @@ void BattleMenu::swap(Player& mainChar) {
 
   cout << "Select a Mythikin to swap with: " << endl;
   for (int i = 1; i < mainChar.getTeam().getSize(); i++) {
-    cout << "(" << i << ") "<< mainChar.getTeam().getSlot(i).getName() << endl; //Prints out team minus first mythikin, since that is the main one
+    cout << "(" << i << ") "<< mainChar.getTeam().getSlot(i).getName(); //Prints out team minus first mythikin, since that is the main one
+    if (mainChar.getTeam().getSlot(i).getHP() <= 0) {
+      cout << " (Knocked Out) ";
+    }
+    cout << endl;
   }
   
   int option;
-  while (!(cin >> option) || option < 1 || option > mainChar.getTeam().getSize()) { //Bounds Checking  
+  while (!(cin >> option) || option < 1 || option > mainChar.getTeam().getSize() || mainChar.getTeam().getSlot(option).getHP() <= 0) { //Bounds Checking  
     cout << "Invalid Input" << endl;
     cin.clear();
     cin.ignore(256, '\n');

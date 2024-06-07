@@ -12,6 +12,8 @@ public:
     // default constructor
     Potion() : Item("Potion", 1, 1, 200), healPowerPercent(25.0) {}
 
+    ~Potion() {}
+
     const unsigned getHealPowerPercent() const { return healPowerPercent; }
 
     void setHealPowerPercent(int newHealPower) { healPowerPercent = newHealPower; }

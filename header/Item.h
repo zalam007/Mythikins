@@ -24,7 +24,8 @@ public:
             capacity = quantity;
         }
     };
-
+    
+    virtual ~Item() {}
     // Accessor methods
     const string getName() const { return name; }
 
