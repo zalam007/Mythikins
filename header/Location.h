@@ -21,17 +21,17 @@ public:
 
     Location(const string &name, const vector<Location *> &neighbors, const vector<NPC> &npcs) : name(name), neighborLocations(neighbors), NPCSpawn(npcs) {}
 
-    string getName()
+    string getName() const
     {
         return name;
     }
 
-    vector<Location *> getNeighbors()
+    vector<Location *> getNeighbors() const
     {
         return neighborLocations;
     }
 
-    vector<NPC> getNPCList()
+    vector<NPC> getNPCList() const
     {
         return NPCSpawn;
     }
