@@ -51,7 +51,7 @@
 > ![Screenshot 2024-06-07 002018](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/134023272/69bd20cc-895d-4c10-ade4-000f9b789cb8)
 > ![Screenshot 2024-06-07 002036](https://github.com/cs100/final-project-zalam007-apere594-jnguy887-dwong133/assets/134023272/8d01f76e-de39-4179-8532-b76cc40836a5)
 
- >     * What SOLID principle(s) did you apply?
+ >     * SOLID principle(s) applied.
  >
  >       (S) We applied the Single Responsibilty Principle with our separation of our menu classes and the classes they depend on.
  >
@@ -64,7 +64,7 @@
  >      (D) We applied the Dependency Inversion Principle with our item class that is contained in our character class.
  >      Instead of hard-coding the different items that is included in our game, we instead opted for an abstract class so we can store the different types of items and storing the behavior in the item itself.
 
- >      * How did you apply it? i.e. describe the change.
+ >      * How we applied it.
  >
  >       (S) For the SRP, we created menu classes to handle outputs to the console and act as drivers for the underlying classes that handle the calculations.
  >
@@ -77,7 +77,7 @@
  >       (D) We implemented a vector of item pointers such that polymorphism will handle the function calls of the different types of objects that the class stores.
 
  >      
- >     * How did this change help you write better code?
+ >     * How this helped write better code.
  >
  >       (S) By adding menu classes we can have less confusing classes with regards to their function, where the menus always handle output and calls the classes they depend on rather than having a class that handles unclearly handles both.
  >
@@ -87,16 +87,8 @@
  >
  >       (I) By separating the different functions for battle, we can avoid having to implement a different case within the function depending on whether the battle was with an NPC or not which allows for cleaner less confusing code.
  > 
- >       (D) By implementing the vector of pointers, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code.
+ >       (D) By implementing the vector of pointers, we can store the functionality of an item inside the item itself which allows for more modular, cleaner, and more extensible code. 
 
-
- 
- > ## Final deliverable
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
  > Screenshots of the input/output after running your application
