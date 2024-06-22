@@ -6,6 +6,8 @@
 #include "Player.h"
 #include "NPC.h"
 #include "Mythikin.h"
+#include <chrono>
+#include <thread>
 
 
 class WildBattleMenu : public BattleMenu {
