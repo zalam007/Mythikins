@@ -26,7 +26,7 @@ void WildBattleMenu::wildGameplay() {
       swap(mainChar);
     }
 
-    printMenu();  //(1) Attack (2) Inventory (3) Swap (4) Flee
+    printMenu();  //Print (1) Attack (2) Inventory (3) Swap (4) Flee
 
     //Get player menu input
     char menuInput;

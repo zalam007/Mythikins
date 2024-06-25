@@ -7,6 +7,18 @@
 
 #include "gtest/gtest.h"
 
+// Test MM is decreased after attack
+// TEST(WildBattleTest, MMStageAttack) {
+//     Mythikin playerMythikin("FireDragon", false, "fire", 10, 30, 100, 1.2);
+//     Team playerTeam;
+//     playerTeam.addMythikin(playerMythikin);
+//     Mythikin wildMythikin("Wildkin", "fire", 10, 100, 100);
+//     WildBattle wildBattle(playerTeam, wildMythikin);
+
+//     stageAttack(playerMythikin, wildMythikin, playerMythikin.getAttacks().at(0));
+//     EXPECT_EQ(move.getMM(), 10); // the 
+// }
+
 // Test isOver method
 TEST(WildBattleTest, IsOver) {
     Mythikin player1("FireDragon", false, "fire", 10, 30, 100, 1.2);
