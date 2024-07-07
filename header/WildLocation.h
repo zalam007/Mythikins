@@ -1,8 +1,9 @@
 #pragma once
+#include <ctime>
 #include "Mythikin.h"
 #include "Location.h"
-#include "WildBattle.h"
-#include "Battle.h"
+#include "WildBattleMenu.h"
+#include "BattleMenu.h"
 
 class WildLocation : public Location
 {
@@ -27,5 +28,5 @@ public:
 
     void setSpawnRate(int spawnRate);
 
-    void encounter() const;
+    void encounter(Player& mainCharacter, PC& playerPC) const;
 };
