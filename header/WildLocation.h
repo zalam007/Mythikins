@@ -1,8 +1,9 @@
 #pragma once
+#include <ctime>
 #include "Mythikin.h"
 #include "Location.h"
-#include "WildBattle.h"
-#include "Battle.h"
+#include "WildBattleMenu.h"
+#include "BattleMenu.h"
 
 class WildLocation : public Location
 {
@@ -11,7 +12,7 @@ private:
     int spawnRate;
 
 public:
-    WildLocation(const string &name): Location(name) {}
+    WildLocation(const string &name) : Location(name) {}
 
     WildLocation(const string &name, const vector<Location *> &neighbors, vector<Mythikin> MythikinList, int spawnRate) : Location(name, neighbors), mythikinSpawn(MythikinList), spawnRate(spawnRate) {}
 
@@ -27,5 +28,5 @@ public:
 
     void setSpawnRate(int spawnRate);
 
-    void encounter() const;
+    void encounter(Player &mainCharacter, PC &playerPC) const;
 };
