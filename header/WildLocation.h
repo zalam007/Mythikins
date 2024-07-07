@@ -12,7 +12,7 @@ private:
     int spawnRate;
 
 public:
-    WildLocation(const string &name): Location(name) {}
+    WildLocation(const string &name) : Location(name) {}
 
     WildLocation(const string &name, const vector<Location *> &neighbors, vector<Mythikin> MythikinList, int spawnRate) : Location(name, neighbors), mythikinSpawn(MythikinList), spawnRate(spawnRate) {}
 
@@ -28,5 +28,5 @@ public:
 
     void setSpawnRate(int spawnRate);
 
-    void encounter(Player& mainCharacter, PC& playerPC) const;
+    void encounter(Player &mainCharacter, PC &playerPC) const;
 };
