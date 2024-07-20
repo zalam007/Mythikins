@@ -50,7 +50,7 @@ public:
     int getHP() const { return HP; }
     bool isKnocked() const { return HP <= 0; }
     double getAttackX() const { return attackX; }
-    vector<Attack> getAttacks() const { return attacks; }
+    vector<Attack>& getAttacks() { return attacks; }
 
     //SETTERS:
     void setName(string name) { this->name = name; }
@@ -64,5 +64,5 @@ public:
         else { this->HP = HP; } // HP set
     }
     void setAttackX(double attackX) { this->attackX = attackX; }
-    void addAttack(Attack attack) { attacks.push_back(attack); }
+    void addAttack(const Attack& attack) { attacks.push_back(attack); }
 };

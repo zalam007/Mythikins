@@ -5,8 +5,59 @@
 
 #include "gtest/gtest.h"
 
+// Test MM is decreased on attack
+TEST(BattleTest, MMStageAttack) {
+    Team playerTeam;
+    Team npcTeam;
+    //string name, string type, int level, int speed, int HP
+    Mythikin attackerMythikin("Attacker", "magma", 10, 100, 100);
+    Mythikin defenderMythikin("Defender", "magma", 10, 100, 100);
+    //string name, string type, int power, int accuracy, int MM
+    Attack move("Fireball", "magma", 50, 100, 10);
+    Attack move2("waterball", "water", 50, 100, 20);
+    Battle battle(playerTeam, npcTeam);
+
+    EXPECT_EQ(move.getMM(), 10);
+    battle.stageAttack(attackerMythikin, defenderMythikin, move);
+    EXPECT_EQ(move.getMM(), 9); // move should lose 1 MM after the attack
+    battle.stageAttack(attackerMythikin, defenderMythikin, move);
+    EXPECT_EQ(move.getMM(), 8); // move should lose 1 MM after the attack
+    battle.stageAttack(attackerMythikin, defenderMythikin, move);
+    EXPECT_EQ(move.getMM(), 7); // move should lose 1 MM after the attack
+
+    EXPECT_EQ(move2.getMM(), 20);
+    battle.stageAttack(attackerMythikin, defenderMythikin, move2);
+    EXPECT_EQ(move2.getMM(), 19); // move should lose 1 MM after the attack
+}
+
+// Test MM is decreased on attack
+TEST(BattleTest, MMStageAttack2) {
+    Attack move("Fireball", "magma", 50, 100, 10);  // move object
+    
+    Team playerTeam;
+    Mythikin attackerMythikin("Attacker", "magma", 10, 100, 100);
+    attackerMythikin.addAttack(move);  // copy?
+    playerTeam.addMythikin(attackerMythikin);
+
+    Team npcTeam;
+    Mythikin defenderMythikin("Defender", "magma", 10, 100, 100);
+    npcTeam.addMythikin(defenderMythikin);
+
+    Battle battle(playerTeam, npcTeam); // construct battle
+
+    EXPECT_EQ(move.getMM(), 10);
+    EXPECT_EQ(playerTeam.getSlot(0).getAttacks().at(0).getMM(), 10);
+
+    Attack& moveRef = attackerMythikin.getAttacks().at(0);
+    battle.stageAttack(attackerMythikin, defenderMythikin, moveRef );
+
+    // after stageAttack function the Attack "move" MM should decrement by 1
+    EXPECT_EQ(playerTeam.getSlot(0).getAttacks().at(0).getMM(), 9); // doesn't work, MM stays as 10
+    EXPECT_EQ(move.getMM(), 9); // Works correctly, MM is decrement to 9
+}
+
 // Test stageAttack method
-TEST(BattleTest, StageAttack) {
+TEST(BattleTest, HealthStageAttack) {
     Team playerTeam;
     Team npcTeam;
     //string name, string type, int level, int speed, int HP
