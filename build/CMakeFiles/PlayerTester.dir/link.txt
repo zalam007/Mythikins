@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/PlayerTester.dir/testing/PlayerTester.cpp.o -o PlayerTester  lib/libgtest.a -lpthread 

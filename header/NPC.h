@@ -13,9 +13,10 @@ class NPC : public Character {
   private:
     vector<string> dialogue;
   public:
-    NPC(string name = "No Name", Team team = Team(), vector<string> dialogue = vector<string>(), vector<Item*> items = vector<Item*>(), int mythicoins = 0) {
+    NPC(string name = "No Name", Team team = Team(), vector<string> dialogue = vector<string>(), vector<BattleItem*> BattleItems = vector<BattleItem*>(), vector<Item*> items = vector<Item*>(), int mythicoins = 0) {
       Character::name = name;
       Character::team = team;
+      Character::battleItems = battleItems;
       Character::items = items;
       Character::mythicoins = mythicoins;
       this->dialogue = dialogue;

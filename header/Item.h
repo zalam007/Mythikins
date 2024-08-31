@@ -24,8 +24,6 @@ public:
             capacity = quantity;
         }
     };
-    
-    virtual ~Item() {}
     // Accessor methods
     const string getName() const { return name; }
 
@@ -51,6 +49,4 @@ public:
     }
 
     void setPrice(unsigned newPrice) { price = newPrice; }
-
-    virtual void use(Mythikin &) = 0; // Special user of the item.
 };

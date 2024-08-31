@@ -98,11 +98,26 @@ void GameplayMenu::viewInventory()
     cout << "_________" << endl;
     cout << "Mythicoins (" << mainCharacter.getCoins() << ")" << endl
          << endl;
-    for (int i = 0; i < mainCharacter.getInventory().size(); ++i)
+
+    int indexNumber = 0; // consistent numbering for all items
+
+    for (int i = 0; indexNumber < mainCharacter.getItemInventory().size(); ++i) // All non-usable items
     {
-        if (mainCharacter.getInventory()[i]->getQuantity() > 0)
+        if (mainCharacter.getItemInventory()[i]->getQuantity() > 0)
         {
-            cout << mainCharacter.getInventory()[i]->getName() << "(x" << mainCharacter.getInventory()[i]->getQuantity() << ")" << endl;
+            cout << mainCharacter.getItemInventory()[i]->getName() << "(x" << mainCharacter.getItemInventory()[i]->getQuantity() << ")" << endl;
+        }
+
+        indexNumber = i;
+    }
+
+    indexNumber++; // increment indexNumber to start from the last index of the previous loop
+
+    for (int i = indexNumber; indexNumber < mainCharacter.getBattleInventory().size() + indexNumber; ++i) // all battle items
+    {
+        if (mainCharacter.getBattleInventory()[i]->getQuantity() > 0)
+        {
+            cout << mainCharacter.getBattleInventory()[i]->getName() << "(x" << mainCharacter.getBattleInventory()[i]->getQuantity() << ")" << endl;
         }
     }
 }

@@ -92,11 +92,19 @@ void ItemShopMenu::buyMenu(Mythishop &shop, Player &shopper)
         {                                                                    // check if user has enough coins
             shopper.removeCoins(shop.getItem(command)->getPrice() * amount); // Takes coins from player
 
-            for (int i = 0; i < shopper.getInventory().size(); i++)
-            { // searches for the item in the inventory
-                if (shopper.getInventory()[i]->getName() == shop.getItem(command)->getName())
+            for (int i = 0; i < shopper.getItemInventory().size(); i++)
+            { // searches for the item in the item inventory
+                if (shopper.getItemInventory()[i]->getName() == shop.getItem(command)->getName())
                 {                                                                                              // If it found the item
-                    shopper.getInventory()[i]->setQuantity(shopper.getInventory()[i]->getQuantity() + amount); // Add the amount to the quantity
+                    shopper.getItemInventory()[i]->setQuantity(shopper.getItemInventory()[i]->getQuantity() + amount); // Add the amount to the quantity
+                }
+            }
+
+            for (int i = 0; i < shopper.getBattleInventory().size(); i++)
+            { // searches for the item in the battleItem inventory
+                if (shopper.getBattleInventory()[i]->getName() == shop.getItem(command)->getName())
+                {                                                                                              // If it found the item
+                    shopper.getBattleInventory()[i]->setQuantity(shopper.getBattleInventory()[i]->getQuantity() + amount); // Add the amount to the quantity
                 }
             }
         }
@@ -123,10 +131,22 @@ void ItemShopMenu::sellMenu(Player &shopper)
     cout << "What would you like to sell?\n"
          << endl;
 
-    // show stock of items.
-    for (int i = 0; i < shopper.getInventory().size(); i++)
+    int indexNumber = 0; // consistent numbering for all items
+
+    // show stock of items in Item Inventory.
+    for (int i = 0; i < shopper.getItemInventory().size(); i++)
     {
-        cout << i << ". " << shopper.getInventory().at(i)->getName() << endl;
+        cout << i << ". " << shopper.getItemInventory().at(i)->getName() << endl;
+
+        indexNumber = i;
+    }
+
+    indexNumber++; // increment indexNumber to start from the last index of the previous loop
+
+    // continue to show stock of items in battle Inventory.
+    for (int i = indexNumber; i < shopper.getBattleInventory().size() + indexNumber; i++)
+    {
+        cout << indexNumber << ". " << shopper.getBattleInventory().at(indexNumber)->getName() << endl;
     }
 
     cout << "\nPress -1 to go back\n"
@@ -139,17 +159,22 @@ void ItemShopMenu::sellMenu(Player &shopper)
     { // user return to main shop menu
         return;
     }
-    else if (command >= 0 && command < shopper.getInventory().size())
+    else if (command >= 0 && command < shopper.getItemInventory().size() + shopper.getBattleInventory().size())
     {               // user selects an item
         int amount; // user selects amount of items to sell
         cout << "How many?" << endl;
         cin >> amount;
 
-        if (shopper.getInventory().at(command)->getQuantity() >= amount)
+        if (command > shopper.getItemInventory().size() && shopper.getItemInventory().at(command)->getQuantity() >= amount)
         {                                                                                  // check if user has enough items to sell
-            shopper.addCoins(shopper.getInventory().at(command)->getPrice() / 2 * amount); // Takes coins from player
+            shopper.addCoins(shopper.getItemInventory().at(command)->getPrice() / 2 * amount); // Give coins to player
 
-            shopper.getInventory().at(command)->setQuantity(shopper.getInventory().at(command)->getQuantity() - amount); // subtract the amount to the quantity
+            shopper.getItemInventory().at(command)->setQuantity(shopper.getItemInventory().at(command)->getQuantity() - amount); // subtract the amount to the quantity
+        }
+        else if(shopper.getBattleInventory().at(command)->getQuantity() >= amount){
+            shopper.addCoins(shopper.getBattleInventory().at(command)->getPrice() / 2 * amount); // Give coins to player
+
+            shopper.getBattleInventory().at(command)->setQuantity(shopper.getBattleInventory().at(command)->getQuantity() - amount); // subtract the amount to the quantity
         }
         else
         {
