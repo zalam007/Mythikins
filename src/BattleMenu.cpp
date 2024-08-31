@@ -125,26 +125,26 @@ void BattleMenu::attack(Battle& currBattle, Player& mainChar, NPC& opponentNPC) 
 
 void BattleMenu::inventory(Player& mainChar) { //Need to talk about PC in wildBattle
   
-  if(mainChar.getInventory().size() == 0) {
+  if(mainChar.getBattleInventory().size() == 0) {
     cout << "Inventory Empty" << endl;
   }
-  for (unsigned i = 0; i < mainChar.getInventory().size(); i++) {
-    cout << "(" << i + 1 << ") " << mainChar.getInventory().at(i)->getName() << " x" << mainChar.getInventory().at(i)->getQuantity() << endl;
+  for (unsigned i = 0; i < mainChar.getBattleInventory().size(); i++) {
+    cout << "(" << i + 1 << ") " << mainChar.getBattleInventory().at(i)->getName() << " x" << mainChar.getBattleInventory().at(i)->getQuantity() << endl;
   }
 
   int option;
-  while (!(cin >> option) || option < 1 || option > mainChar.getInventory().size()) { //Bounds Checking  
+  while (!(cin >> option) || option < 1 || option > mainChar.getBattleInventory().size()) { //Bounds Checking  
     cout << "Invalid Input" << endl;
     cin.clear();
     cin.ignore(256, '\n');
   } 
 
-  if (mainChar.getInventory().at(option-1)->getName() == "Mythicube") {//Talk about how to implement this going forward
+  if (mainChar.getBattleInventory().at(option-1)->getName() == "Mythicube") {//Talk about how to implement this going forward
     cout << "You can't catch your opponent's mythikin." << endl << endl;
   } else {
-    mainChar.getInventory().at(option-1)->use(mainChar.getTeam().getSlot(0)); //Use the item (Bug, health doesn't update)
-    if (mainChar.getInventory().at(option-1)->getQuantity() <= 0) { // If quantity is <= 0, remove it
-      mainChar.removeItem(mainChar.getInventory().at(option-1)->getName());
+    mainChar.getBattleInventory().at(option-1)->use(mainChar.getTeam().getSlot(0)); //Use the item (Bug, health doesn't update)
+    if (mainChar.getBattleInventory().at(option-1)->getQuantity() <= 0) { // If quantity is <= 0, remove it
+      mainChar.removeItem(mainChar.getBattleInventory().at(option-1)->getName());
     }
   } 
 }

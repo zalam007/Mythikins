@@ -1,16 +1,16 @@
-#include "Item.h"
+#include "BattleItem.h"
 
 #pragma once
 
-class Potion : public Item
+class Potion : public BattleItem
 {
     double healPowerPercent;
 
 public:
-    Potion(string name, unsigned quant, unsigned cap, unsigned price, double healPower) : Item(name, quant, cap, price), healPowerPercent(healPower) {}
+    Potion(string name, unsigned quant, unsigned cap, unsigned price, double healPower) : BattleItem(name, quant, cap, price), healPowerPercent(healPower) {}
 
     // default constructor
-    Potion() : Item("Potion", 1, 1, 200), healPowerPercent(25.0) {}
+    Potion() : BattleItem("Potion", 1, 1, 200), healPowerPercent(25.0) {}
 
     ~Potion() {}
 

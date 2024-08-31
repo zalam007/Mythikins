@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/BattleTester.dir/testing/BattleTester.cpp.o CMakeFiles/BattleTester.dir/src/Battle.cpp.o CMakeFiles/BattleTester.dir/src/Team.cpp.o -o BattleTester  lib/libgtest.a -lpthread 

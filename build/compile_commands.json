@@ -1,0 +1,212 @@
+[
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/PlayerTester.dir/testing/PlayerTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/PlayerTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/PlayerTester.cpp",
+  "output": "CMakeFiles/PlayerTester.dir/testing/PlayerTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/ItemTester.dir/testing/ItemTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/ItemTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/ItemTester.cpp",
+  "output": "CMakeFiles/ItemTester.dir/testing/ItemTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/MythikinTester.dir/testing/MythikinTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/MythikinTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/MythikinTester.cpp",
+  "output": "CMakeFiles/MythikinTester.dir/testing/MythikinTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/MythidexTester.dir/testing/MythidexTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/MythidexTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/MythidexTester.cpp",
+  "output": "CMakeFiles/MythidexTester.dir/testing/MythidexTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/MythidexTester.dir/src/Mythidex.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp",
+  "output": "CMakeFiles/MythidexTester.dir/src/Mythidex.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/AttackTester.dir/testing/AttackTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/AttackTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/AttackTester.cpp",
+  "output": "CMakeFiles/AttackTester.dir/testing/AttackTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/BattleTester.dir/testing/BattleTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/BattleTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/BattleTester.cpp",
+  "output": "CMakeFiles/BattleTester.dir/testing/BattleTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/BattleTester.dir/src/Battle.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Battle.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Battle.cpp",
+  "output": "CMakeFiles/BattleTester.dir/src/Battle.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/BattleTester.dir/src/Team.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp",
+  "output": "CMakeFiles/BattleTester.dir/src/Team.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/testing/WildBattleTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/WildBattleTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/WildBattleTester.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/testing/WildBattleTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Battle.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Battle.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Battle.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Battle.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/BattleMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/BattleMenu.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/BattleMenu.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/BattleMenu.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Character.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Character.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Character.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Character.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Gym.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Gym.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/ItemShopMenu.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/ItemShopMenu.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Location.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Location.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Location.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Location.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicube.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicube.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythishop.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythishop.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/NPC.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/NPC.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/PC.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/PC.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/PC.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/PC.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Player.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Player.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Player.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Player.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Potion.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Potion.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Team.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/Team.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattle.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattle.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattleMenu.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattleMenu.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildLocation.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildLocation.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/PCTester.dir/testing/PCTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/PCTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/PCTester.cpp",
+  "output": "CMakeFiles/PCTester.dir/testing/PCTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/LocationTester.dir/testing/LocationTester.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/LocationTester.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/testing/LocationTester.cpp",
+  "output": "CMakeFiles/LocationTester.dir/testing/LocationTester.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/googletest/googlemock",
+  "command": "/usr/bin/g++  -I/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/include -I/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/src/gmock-all.cc",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/src/gmock-all.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/googletest/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/src/gmock_main.cc",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googlemock/src/gmock_main.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/googletest/googletest",
+  "command": "/usr/bin/g++  -I/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -I/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/src/gtest-all.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/googletest/googletest",
+  "command": "/usr/bin/g++  -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/src/gtest_main.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

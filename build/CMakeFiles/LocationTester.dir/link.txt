@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/LocationTester.dir/testing/LocationTester.cpp.o -o LocationTester  lib/libgtest.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/ItemTester.dir/testing/ItemTester.cpp.o -o ItemTester  lib/libgtest.a -lpthread 

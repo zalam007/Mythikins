@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/PCT.dir/testing/AttackTester.cpp.o -o PCT 

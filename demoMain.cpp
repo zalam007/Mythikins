@@ -63,10 +63,11 @@ int main() {
 
 
 
-  Item* healingPotion = new Potion("Health Potion", 2, 4, 25, 100);
-  Item* catchCube = new Mythicube("Mythicube", 2, 4, 50, 50);
+  Potion* healingPotion = new Potion("Health Potion", 2, 4, 25, 100);
+  Mythicube* catchCube = new Mythicube("Mythicube", 2, 4, 50, 50);
 
   vector<Item *> playerInventory;
+  vector<BattleItem *> playerBattleInventory;
   
 
 
@@ -102,15 +103,19 @@ int main() {
     break;
   }
 
-  Player mainChar(name, emptyLocation, playerTeam, playerInventory, 500);
-  mainChar.addItem(healingPotion);
-  mainChar.addItem(catchCube);
+  Player mainChar(name, emptyLocation, playerTeam, playerBattleInventory, playerInventory, 500);
+  mainChar.addBattleItem(healingPotion);
+  mainChar.addBattleItem(catchCube);
 
   WildBattleMenu demoBattle(mainChar, vinebeast, placeholderPC);
 
   demoBattle.wildGameplay();
 
+  Item* Medallion = new Item("Medallion", 1, 8, 0);
 
+  mainChar.addItem(Medallion);
+
+  cout << "You have defeated the Vinebeast! You have earned a Medallion!" << endl;
 
   cout << "Thanks for playing our demo, more on the horizon." << endl;
 

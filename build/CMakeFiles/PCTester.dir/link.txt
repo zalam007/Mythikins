@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/PCTester.dir/testing/PCTester.cpp.o -o PCTester  lib/libgtest.a -lpthread 
