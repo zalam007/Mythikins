@@ -1,19 +1,19 @@
 #include "../header/Mythicenter.h"
 
-PC Mythicenter::getPC()
+PC* Mythicenter::getPC()
 {
     return playerPC;
 }
 
 void Mythicenter::changePC(PC &newPC)
 {
-    playerPC = newPC;
+    playerPC = &newPC;
 }
 
-void Mythicenter::healMythikins(vector<Mythikin> &team)
+void Mythicenter::healMythikins(Team &team)
 {
-    for (int i = 0; i < team.size(); ++i)
+    for (int i = 0; i < team.getSize(); ++i)
     {
-        team[i].setHP(team[i].getMaxHP());
+        team.getSlot(i).setHP(team.getSlot(i).getMaxHP());
     }
 }

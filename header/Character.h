@@ -4,6 +4,8 @@
 #include <vector>
 #include "Mythikin.h"
 #include "Item.h"
+#include "Potion.h"
+#include "Mythicube.h"
 #include "BattleItem.h"
 #include "Team.h"
 #include <cstdlib>
@@ -44,7 +46,60 @@ class Character {
 
     void setBattleItems(const vector<BattleItem*> newBattleItems) {battleItems = newBattleItems;}
     void setItems(const vector<Item*> newItems) {items = newItems;}
+
+    void addItem(Item* newItem) {
+        bool itemExists = false;
+        for (unsigned i = 0; i < items.size(); i++) {
+            if (items.at(i)->getName() == newItem->getName()) {
+                // Item exists, update quantity
+                items.at(i)->setQuantity(items.at(i)->getQuantity() + newItem->getQuantity());
+                itemExists = true;
+                break; // Exit loop once the item is found and updated
+            }
+        }
+        
+        if (!itemExists) {
+            // Item doesn't exist, add new item
+            items.push_back(newItem);
+        }
+    }
+
+
+    // Adding battle items to NPC
+    void addBattleItem(BattleItem* newBattleItem) {
+        bool itemExists = false;
+        for (unsigned i = 0; i < battleItems.size(); i++) {
+            if (battleItems.at(i)->getName() == newBattleItem->getName()) {
+                // Battle item exists, update quantity
+                battleItems.at(i)->setQuantity(battleItems.at(i)->getQuantity() + newBattleItem->getQuantity());
+                itemExists = true;
+                break; // Exit loop once the item is found and updated
+            }
+        }
+        
+        if (!itemExists) {
+            // Battle item doesn't exist, add new battle item
+            battleItems.push_back(newBattleItem);
+        }
+    }
+
+  Item* findItemByName(const string &itemName) {
+    for (Item* item : items) {
+        if (item->getName() == itemName) {
+            return item;
+        }
+    }
+    return nullptr; // Return nullptr if the item is not found
+  }
+
+  BattleItem* findBattleItemByName(const string &itemName) {
+    for (BattleItem* item : battleItems) {
+        if (item->getName() == itemName) {
+            return item;
+        }
+    }
+    return nullptr; // Return nullptr if the item is not found
+  }
+
     void useItem(const string&, Mythikin&);
-
-
 };

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <map>
 using namespace std;
 
 // Attacks that Mythikin can use
@@ -36,7 +37,9 @@ public:
     void setAccuracy(int accuracy) { this->accuracy = accuracy; }
     void setMaxMM(int maxMM) { this->maxMM = maxMM; }
     void setMM(int MM) {  
-        if(MM >= maxMM) { cerr << "set MM over max, set to max"; this->MM = maxMM; }
+        if(MM >= maxMM) { this->MM = maxMM; }
         else { this->MM = MM; }
     }
 };
+
+extern map<string, Attack*> attacks;

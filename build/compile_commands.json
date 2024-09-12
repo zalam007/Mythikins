@@ -79,6 +79,12 @@
 },
 {
   "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
   "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp",
   "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp",
   "output": "CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o"
@@ -106,6 +112,12 @@
   "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp",
   "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp",
   "output": "CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o"
+},
+{
+  "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",
+  "command": "/usr/bin/g++ -Dgtest_disable_pthreads=ON -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest/include -isystem /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/googletest/googletest -g -o CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp",
+  "file": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp",
+  "output": "CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o"
 },
 {
   "directory": "/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build",

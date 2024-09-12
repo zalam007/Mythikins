@@ -26,51 +26,52 @@ void WildBattleMenu::wildGameplay() {
       swap(mainChar);
     }
 
-    printMenu();  //Print (1) Attack (2) Inventory (3) Swap (4) Flee
+    //PLAYER'S TURN:
+    char menuInput; //Get player menu input
+    while(!playerActed){
+      printMenu();  //Print (1) Attack (2) Inventory (3) Swap (4) Flee
 
-    //Get player menu input
-    char menuInput;
-    if (!(cin >> menuInput)) { //If invalid input, print error and start over loop 
-      cerr << "Invalid Input." << endl;
-      cin.clear();
-      cin.ignore(256, '\n');
-      continue;
-    }
-    cout << endl;
+      if (!(cin >> menuInput)) { //If invalid input, print error and start over loop 
+        cerr << "Invalid Input." << endl;
+        continue;
+      }
+      cout << endl;
 
-    //Checks user input for all the options of printMenu()
-    switch (menuInput) {
-    case '1' :
-      attackWild(playerVsMythikin, mainChar, wildMythikin);
-      break;
+      //Checks user input for all the options of printMenu()
+      switch (menuInput) {
+      case '1' :
+        attackWild(playerVsMythikin, mainChar, wildMythikin);
+        break;
 
-    case '2' :
-      inventory(mainChar, playerVsMythikin);
-      break;
-    
-    case '3' :
-      swap(mainChar);
-      break;
+      case '2' :
+        inventory(mainChar, playerVsMythikin);
+        break;
+      
+      case '3' :
+        swap(mainChar);
+        break;
 
-    case '4' :
-      if (playerVsMythikin.Flee()) {
-        this_thread::sleep_for(chrono::milliseconds(500));
-        cout << mainChar.getName() << " fled successfully." << endl << endl;
-        return;
-      } else {
-        this_thread::sleep_for(chrono::milliseconds(500));
-        cout << mainChar.getName() << " tried to flee, but failed." << endl << endl;
+      case '4' :
+        if (playerVsMythikin.Flee()) {
+          this_thread::sleep_for(chrono::milliseconds(500));
+          cout << mainChar.getName() << " fled successfully." << endl << endl;
+          return;
+        } else {
+          this_thread::sleep_for(chrono::milliseconds(500));
+          cout << mainChar.getName() << " tried to flee, but failed." << endl << endl;
+        } 
+        break;
+
+      default:
+        cerr << "Invalid number" << endl;
+        break;
       } 
-      break;
-
-    default:
-      cerr << "Invalid number" << endl;
-      break;
+      cin.ignore(256, '\n'); //Clear cin
     }
-    cin.ignore(256, '\n'); //Clear cin
-    
 
-    //OPPENTENTS TURN:
+    playerActed = false; // Reset playerActed
+
+    //OPPONENTS TURN:
     this_thread::sleep_for(chrono::seconds(1));
     cout << "\n" << wildMythikin.getName() << "'s turn: " << endl;
     playerVsMythikin.AIAttack(wildMythikin, mainChar.getTeam().getSlot(0));
@@ -106,15 +107,33 @@ void WildBattleMenu::wildGameplay() {
 //(1) Attack
 void WildBattleMenu::attackWild(WildBattle& playerVsMythikin, Player& mainChar, Mythikin& wildMythikin) {
   cout << "Choose an attack: " << endl;
-  vector<Attack> possibleAttacks = mainChar.getTeam().getSlot(0).getAttacks(); //Cache the attack vector
+  vector<Attack>& possibleAttacks = mainChar.getTeam().getSlot(0).getAttacks(); //Cache the attack vector
   for (unsigned i = 0; i < possibleAttacks.size(); i++) {
     cout << i + 1 << ".) " << possibleAttacks.at(i).getName() 
     << " MM " << possibleAttacks.at(i).getMM() << "/" << possibleAttacks.at(i).getMaxMM() << endl; // Print all attacks possible and MM
   }
 
+  cout << "\nPress -1 to go back\n" 
+  << endl;
+
   int attackInput;
-  while (!(cin >> attackInput) || attackInput < 1 || attackInput > possibleAttacks.size()) { //Bounds Checking  
+  while (true) { // Choosing attack
+    cin >> attackInput;
+
+    if(attackInput > 0 && attackInput <= possibleAttacks.size()) {
+      playerActed = true;
+      break;
+    }
+    else if (attackInput == -1) {
+      return;
+    }
     cout << "Invalid attack input" << endl;
+
+    for (unsigned i = 0; i < possibleAttacks.size(); i++) {
+      cout << i + 1 << ".) " << possibleAttacks.at(i).getName() 
+      << " MM " << possibleAttacks.at(i).getMM() << "/" << possibleAttacks.at(i).getMaxMM() << endl; // Print all attacks possible and MM
+    }
+
     cin.clear();
     cin.ignore(256, '\n');
   }
@@ -129,16 +148,38 @@ void WildBattleMenu::inventory(Player& mainChar, WildBattle& playerVsMythikin) {
   if(mainChar.getBattleInventory().size() == 0) {
     cout << "Inventory Empty" << endl;
   }
+
   for (unsigned i = 0; i < mainChar.getBattleInventory().size(); i++) {
     cout << "(" << i + 1 << ") " << mainChar.getBattleInventory().at(i)->getName() << " x" << mainChar.getBattleInventory().at(i)->getQuantity() << endl;
   }
 
+  cout << "\nPress -1 to go back\n" 
+    << endl;
+
   int option;
-  while (!(cin >> option) || option < 1 || option > mainChar.getBattleInventory().size()) { //Bounds Checking  
-    cout << "Invalid Input" << endl;
+
+  while (true) { // Choosing item from inventory
+    cin >> option;
+
+    if (option > 0 && option <= mainChar.getBattleInventory().size()) {
+      playerActed = true;
+      break;
+    }
+    else if (option == -1) {
+      return;
+    }
+    cout << "Invalid Input" << endl << endl;
+
+    for (unsigned i = 0; i < mainChar.getBattleInventory().size(); i++) {
+      cout << "(" << i + 1 << ") " << mainChar.getBattleInventory().at(i)->getName() << " x" << mainChar.getBattleInventory().at(i)->getQuantity() << endl;
+    }
+
+    cout << "\nPress -1 to go back\n" 
+      << endl;
+
     cin.clear();
     cin.ignore(256, '\n');
-  } 
+  }
 
   if (mainChar.getBattleInventory().at(option-1)->getName() == "Mythicube") {//If it's a mythicube, call catch
     catchMythikin(playerVsMythikin, wildMythikin, storedMythikin, dynamic_cast<Mythicube&>(*mainChar.getBattleInventory().at(option-1))); // God this is stinky ass code, but it basically converts the item* type of inventory to a Mythikin &

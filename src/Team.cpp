@@ -21,7 +21,7 @@ void Team::swapSlots(int slot1, int slot2) {
   team[slot2] = oldMythikin;
 }
 
-void Team::addMythikin(Mythikin newMember) {
+void Team::addMythikin(Mythikin& newMember) {
   if (teamSize == MAX_SIZE) throw runtime_error("Team Full"); //Check if full
   team[teamSize] = newMember;
   teamSize++;

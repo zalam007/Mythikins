@@ -125,10 +125,24 @@ CMakeFiles/WildBattleTester.dir/src/Character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WildBattleTester.dir/src/Character.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Character.cpp -o CMakeFiles/WildBattleTester.dir/src/Character.cpp.s
 
+CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
+CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp
+CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp
+
+CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp > CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.i
+
+CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/CutsceneManager.cpp -o CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.s
+
 CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp
 CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/GameplayMenu.cpp
 
 CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Gym.cpp
 CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Gym.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Gym.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/WildBattleTester.dir/src/Gym.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/ItemShopMenu.cpp
 CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/ItemShopMenu.cpp
 
 CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Location.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Location.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Location.cpp
 CMakeFiles/WildBattleTester.dir/src/Location.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Location.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Location.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Location.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Location.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Location.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Location.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Location.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/WildBattleTester.dir/src/Location.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp
 CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.i: cmake_force
@@ -195,10 +209,24 @@ CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicenter.cpp -o CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.s
 
+CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
+CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp
+CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp
+
+CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp > CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.i
+
+CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/MythicenterMenu.cpp -o CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.s
+
 CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicube.cpp
 CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythicube.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.i: cmake_force
@@ -212,7 +240,7 @@ CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp
 CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythidex.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.i: cmake_force
@@ -226,7 +254,7 @@ CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythishop.cpp
 CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Mythishop.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.i: cmake_force
@@ -240,7 +268,7 @@ CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/NPC.cpp
 CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/NPC.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/NPC.cpp
 
 CMakeFiles/WildBattleTester.dir/src/NPC.cpp.i: cmake_force
@@ -254,7 +282,7 @@ CMakeFiles/WildBattleTester.dir/src/NPC.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/PC.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/PC.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/PC.cpp
 CMakeFiles/WildBattleTester.dir/src/PC.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/WildBattleTester.dir/src/PC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/WildBattleTester.dir/src/PC.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/PC.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/PC.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/PC.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/PC.cpp
 
 CMakeFiles/WildBattleTester.dir/src/PC.cpp.i: cmake_force
@@ -268,7 +296,7 @@ CMakeFiles/WildBattleTester.dir/src/PC.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Player.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Player.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Player.cpp
 CMakeFiles/WildBattleTester.dir/src/Player.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Player.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Player.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Player.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Player.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Player.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Player.cpp.i: cmake_force
@@ -282,7 +310,7 @@ CMakeFiles/WildBattleTester.dir/src/Player.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Potion.cpp
 CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Potion.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Potion.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Potion.cpp.i: cmake_force
@@ -296,7 +324,7 @@ CMakeFiles/WildBattleTester.dir/src/Potion.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/Team.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/Team.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp
 CMakeFiles/WildBattleTester.dir/src/Team.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Team.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/WildBattleTester.dir/src/Team.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/Team.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/Team.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/Team.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/Team.cpp
 
 CMakeFiles/WildBattleTester.dir/src/Team.cpp.i: cmake_force
@@ -310,7 +338,7 @@ CMakeFiles/WildBattleTester.dir/src/Team.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattle.cpp
 CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattle.cpp
 
 CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.i: cmake_force
@@ -324,7 +352,7 @@ CMakeFiles/WildBattleTester.dir/src/WildBattle.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattleMenu.cpp
 CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildBattleMenu.cpp
 
 CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.i: cmake_force
@@ -338,7 +366,7 @@ CMakeFiles/WildBattleTester.dir/src/WildBattleMenu.cpp.s: cmake_force
 CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o: CMakeFiles/WildBattleTester.dir/flags.make
 CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o: /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildLocation.cpp
 CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o: CMakeFiles/WildBattleTester.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o -MF CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o.d -o CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o -c /home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/src/WildLocation.cpp
 
 CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.i: cmake_force
@@ -355,11 +383,13 @@ WildBattleTester_OBJECTS = \
 "CMakeFiles/WildBattleTester.dir/src/Battle.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/BattleMenu.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Character.cpp.o" \
+"CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Location.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o" \
+"CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o" \
 "CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o" \
@@ -379,11 +409,13 @@ WildBattleTester: CMakeFiles/WildBattleTester.dir/testing/WildBattleTester.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Battle.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/BattleMenu.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Character.cpp.o
+WildBattleTester: CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/GameplayMenu.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Gym.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/ItemShopMenu.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Location.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.o
+WildBattleTester: CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Mythicube.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Mythidex.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/src/Mythishop.cpp.o
@@ -398,7 +430,7 @@ WildBattleTester: CMakeFiles/WildBattleTester.dir/src/WildLocation.cpp.o
 WildBattleTester: CMakeFiles/WildBattleTester.dir/build.make
 WildBattleTester: lib/libgtest.a
 WildBattleTester: CMakeFiles/WildBattleTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable WildBattleTester"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/apere594/final-project-zalam007-apere594-jnguy887-dwong133/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable WildBattleTester"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WildBattleTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

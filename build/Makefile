@@ -405,6 +405,30 @@ src/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/Character.cpp.s
 .PHONY : src/Character.cpp.s
 
+src/CutsceneManager.o: src/CutsceneManager.cpp.o
+.PHONY : src/CutsceneManager.o
+
+# target to build an object file
+src/CutsceneManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.o
+.PHONY : src/CutsceneManager.cpp.o
+
+src/CutsceneManager.i: src/CutsceneManager.cpp.i
+.PHONY : src/CutsceneManager.i
+
+# target to preprocess a source file
+src/CutsceneManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.i
+.PHONY : src/CutsceneManager.cpp.i
+
+src/CutsceneManager.s: src/CutsceneManager.cpp.s
+.PHONY : src/CutsceneManager.s
+
+# target to generate assembly for a file
+src/CutsceneManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/CutsceneManager.cpp.s
+.PHONY : src/CutsceneManager.cpp.s
+
 src/GameplayMenu.o: src/GameplayMenu.cpp.o
 .PHONY : src/GameplayMenu.o
 
@@ -524,6 +548,30 @@ src/Mythicenter.s: src/Mythicenter.cpp.s
 src/Mythicenter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/Mythicenter.cpp.s
 .PHONY : src/Mythicenter.cpp.s
+
+src/MythicenterMenu.o: src/MythicenterMenu.cpp.o
+.PHONY : src/MythicenterMenu.o
+
+# target to build an object file
+src/MythicenterMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.o
+.PHONY : src/MythicenterMenu.cpp.o
+
+src/MythicenterMenu.i: src/MythicenterMenu.cpp.i
+.PHONY : src/MythicenterMenu.i
+
+# target to preprocess a source file
+src/MythicenterMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.i
+.PHONY : src/MythicenterMenu.cpp.i
+
+src/MythicenterMenu.s: src/MythicenterMenu.cpp.s
+.PHONY : src/MythicenterMenu.s
+
+# target to generate assembly for a file
+src/MythicenterMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildBattleTester.dir/build.make CMakeFiles/WildBattleTester.dir/src/MythicenterMenu.cpp.s
+.PHONY : src/MythicenterMenu.cpp.s
 
 src/Mythicube.o: src/Mythicube.cpp.o
 .PHONY : src/Mythicube.o
@@ -1045,6 +1093,9 @@ help:
 	@echo "... src/Character.o"
 	@echo "... src/Character.i"
 	@echo "... src/Character.s"
+	@echo "... src/CutsceneManager.o"
+	@echo "... src/CutsceneManager.i"
+	@echo "... src/CutsceneManager.s"
 	@echo "... src/GameplayMenu.o"
 	@echo "... src/GameplayMenu.i"
 	@echo "... src/GameplayMenu.s"
@@ -1060,6 +1111,9 @@ help:
 	@echo "... src/Mythicenter.o"
 	@echo "... src/Mythicenter.i"
 	@echo "... src/Mythicenter.s"
+	@echo "... src/MythicenterMenu.o"
+	@echo "... src/MythicenterMenu.i"
+	@echo "... src/MythicenterMenu.s"
 	@echo "... src/Mythicube.o"
 	@echo "... src/Mythicube.i"
 	@echo "... src/Mythicube.s"

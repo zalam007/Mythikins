@@ -4,7 +4,7 @@ void Location::removeNPC(const string &name)
 {
     for (int i = 0; i < NPCSpawn.size(); ++i)
     {
-        if (NPCSpawn[i].getName() == name)
+        if (NPCSpawn[i]->getName() == name)
         {
             NPCSpawn.erase(NPCSpawn.begin() + i);
         }

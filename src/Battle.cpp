@@ -25,6 +25,13 @@ void Battle::stageAttack(Mythikin& attacker, Mythikin& defender, Attack& move) {
     // Reduce the defender's HP
     defender.setHP(defender.getHP() - damage);
     cout << attacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
+    if(typeAdvantage > 1.0) {
+        cout << "It's very effective!" << endl;
+    }
+    else if(typeAdvantage < 1.0) {
+        cout << "It's not very effective..." << endl;
+
+    }
 }
 
 //NPC Mythikin attacks Player Mythikin with random move
@@ -65,6 +72,13 @@ void Battle::AIAttack(Mythikin& npcAttacker, Mythikin& playerDefender) {
     // Reduce the player's HP
     playerDefender.setHP(playerDefender.getHP() - damage);
     cout << npcAttacker.getName() << " used " << move.getName() << " and dealt " << damage << " damage!" << endl;
+    if(typeAdvantage > 1.0) {
+        cout << "It's very effective!" << endl;
+    }
+    else if(typeAdvantage < 1.0) {
+        cout << "It's not very effective..." << endl;
+
+    }
 }
 
 void Battle::swapSlots(int slot1, int slot2)
