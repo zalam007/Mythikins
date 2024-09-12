@@ -15,6 +15,7 @@ class WildBattleMenu : public BattleMenu {
     Player& mainChar;
     Mythikin& wildMythikin;
     PC& storedMythikin;
+    bool playerActed = false; // help to check if player has acted before switching to opponent's turn
   public:
     WildBattleMenu(Player& mainChar, Mythikin& wildMythikin, PC& storedMythikin) : mainChar(mainChar), wildMythikin(wildMythikin), storedMythikin(storedMythikin) {  }
     void printMenu();

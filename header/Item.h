@@ -2,6 +2,7 @@
 
 #include <string> 
 #include "Mythikin.h"
+#include "map"
 
 
 using namespace std;
@@ -50,3 +51,5 @@ public:
 
     void setPrice(unsigned newPrice) { price = newPrice; }
 };
+
+extern map<string, Item*> items; // Global map to store NPCs by name

@@ -18,6 +18,6 @@ class Team {
 
     void swapSlots(int slot1, int slot2); // Swaps the Mythikins at the given indices
 
-    void addMythikin(Mythikin newMember);     // Adds a new member to the team
+    void addMythikin(Mythikin& newMember);     // Adds a new member to the team
     void removeMythikin(const string& name);  // Removes a member from the team by name
 };

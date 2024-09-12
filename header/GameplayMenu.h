@@ -8,15 +8,17 @@
 class GameplayMenu : protected Menu
 {
 public:
-    GameplayMenu(Player &mainCharacter, Mythidex &mythidex);
+    GameplayMenu(Player& mainCharacter, Mythidex& mythidex);
     void printMenu();
 
 private:
-    Player mainCharacter;
-    Mythidex mythidex;
+    Player& mainCharacter;
+    Mythidex& mythidex;
     void printLocations();
     void goTo(Location *destination);
     void viewInventory();
     void viewMythidex() const;
     void viewTeam();
+    void viewNPCs();
+    
 };

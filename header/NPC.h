@@ -6,8 +6,8 @@
 #include "Mythikin.h"
 #include "Item.h"
 #include "Character.h"
-
-using std::string;
+#include "map"
+using namespace std;
 
 class NPC : public Character { 
   private:
@@ -22,19 +22,21 @@ class NPC : public Character {
       this->dialogue = dialogue;
     }
 
+  ~NPC() {
+    Character::battleItems.clear();
+    Character::items.clear();
+  }
+
 
     const string& talk(); //Changed this to return string, made more sense
     // void useItems(); TODO: Add later if time
 
     const vector<string>& getDialogue() {return dialogue;}
 
-
     void setDialogue(const vector<string>& newDialogue) {dialogue = newDialogue;}
+
+    void addDialogue(const string& newDialogue) {dialogue.push_back(newDialogue);}
     
-
-
-
-
-
-
 };
+
+extern map<string, NPC*> npcs; //For later declaration in main.cpp

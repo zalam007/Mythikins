@@ -11,3 +11,12 @@ void Player::removeItem(const string& itemName) {
   }
   //Does nothing if name not found
 }
+
+Item* Player::findItemByName(const string &itemName) {
+    for (Item* item : Character::items) {
+        if (item->getName() == itemName) {
+            return item;
+        }
+    }
+    return nullptr; // Return nullptr if the item is not found
+}

@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "Mythikin.h"   // Attack.h included
+#include "BattleItem.h"
 #include "Team.h"
 
 class Battle {

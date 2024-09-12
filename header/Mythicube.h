@@ -10,7 +10,7 @@ class Mythicube : public BattleItem
 
 public:
     // Constructor, extension of item class
-    Mythicube(string name, unsigned quant, unsigned cap, unsigned price, unsigned rate)
+    Mythicube(string name, unsigned quant, unsigned cap, unsigned price, double rate)
         : BattleItem(name, quant, cap, price), catchRate(rate) {}
 
     // Default constructor
@@ -20,7 +20,7 @@ public:
     ~Mythicube() { delete capturedMythikin; } // deletes the captured Mythikin
 
     // Getters
-    unsigned getCatchRate() const { return catchRate; } // returns the catch rate
+    double getCatchRate() const { return catchRate; } // returns the catch rate
     
     Mythikin *getCapturedMythikin() const { return capturedMythikin; } // returns nullpointer if no Mythikin
 
@@ -30,7 +30,7 @@ public:
         capturedMythikin = nullptr; 
     } // sets Mythicube pointer to null
 
-    void setCatchRate(unsigned newRate) { catchRate = newRate; } // sets the catch rate
+    void setCatchRate(double newRate) { catchRate = newRate; } // sets the catch rate
 
     // If calculatedToBeCaught==true catches the Wild-Mythikin and stores it in the capturedMythikin pointer
     void use(Mythikin &victim);

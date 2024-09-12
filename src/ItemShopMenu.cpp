@@ -1,9 +1,16 @@
 #include "../header/ItemShopMenu.h"
 
-ItemShopMenu::ItemShopMenu(Mythishop &shop, Player &shopper)
+void ItemShopMenu::printMenu()
 {
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "Welcome to the Mythishop! What service are you looking for?\n\n"
+         << endl;
+    cout << "1. Buy" << endl;
+    cout << "2. Sell" << endl;
+    cout << "3. Leave\n"
+         << endl;
+
     int command;
-    printMenu();
 
     while (true)
     {
@@ -12,7 +19,7 @@ ItemShopMenu::ItemShopMenu(Mythishop &shop, Player &shopper)
 
         if (command == 1)
         {
-            buyMenu(shop, shopper);
+            buyMenu(*shop, shopper);
             cout << "Anything else?" << endl;
             cout << "1. Buy" << endl;
             cout << "2. Sell" << endl;
@@ -48,17 +55,6 @@ ItemShopMenu::ItemShopMenu(Mythishop &shop, Player &shopper)
     }
 }
 
-void ItemShopMenu::printMenu()
-{
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    cout << "Welcome to the Mythishop! What service are you looking for?\n\n"
-         << endl;
-    cout << "1. Buy" << endl;
-    cout << "2. Sell" << endl;
-    cout << "3. Leave\n"
-         << endl;
-}
-
 void ItemShopMenu::buyMenu(Mythishop &shop, Player &shopper)
 {
     int command; // user input to choose item and select amount or go back
@@ -69,7 +65,7 @@ void ItemShopMenu::buyMenu(Mythishop &shop, Player &shopper)
     // show stock of items.
     for (int i = 0; i < shop.getStock().size(); i++)
     {
-        cout << i << ". " << shop.getItem(i)->getName() << endl;
+        cout << i << ". " << shop.getItem(i)->getName() << "[$" << shop.getItem(i)->getPrice() << "]" << endl;
     }
 
     cout << "\nPress -1 to go back\n"
@@ -136,7 +132,7 @@ void ItemShopMenu::sellMenu(Player &shopper)
     // show stock of items in Item Inventory.
     for (int i = 0; i < shopper.getItemInventory().size(); i++)
     {
-        cout << i << ". " << shopper.getItemInventory().at(i)->getName() << endl;
+        cout << i << ". " << shopper.getItemInventory().at(i)->getName() << "[$" << shopper.getItemInventory().at(i)->getPrice()  << "]" << endl;
 
         indexNumber = i;
     }
@@ -144,9 +140,10 @@ void ItemShopMenu::sellMenu(Player &shopper)
     indexNumber++; // increment indexNumber to start from the last index of the previous loop
 
     // continue to show stock of items in battle Inventory.
-    for (int i = indexNumber; i < shopper.getBattleInventory().size() + indexNumber; i++)
+    for (int i = 0; i < shopper.getBattleInventory().size(); i++)
     {
-        cout << indexNumber << ". " << shopper.getBattleInventory().at(indexNumber)->getName() << endl;
+        cout << indexNumber << ". " << shopper.getBattleInventory().at(i)->getName() << "[$" << shopper.getBattleInventory().at(i)->getPrice()  << "]" << endl;
+        indexNumber++;
     }
 
     cout << "\nPress -1 to go back\n"

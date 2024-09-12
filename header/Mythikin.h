@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include "Attack.h"
+#include <map>
 using namespace std;
 
 // Mythikin creature class (similar to a Pokimon)
@@ -22,8 +23,8 @@ private:
 
 public:
     //CONSTRUCTORS:
-    Mythikin(string name, bool wild, string type, int level, int speed, int HP, double attackX)
-        : name(name), wild(wild), type(type), level(level), speed(speed), maxHP(HP), HP(HP), attackX(attackX) {}
+    Mythikin(string name, bool wild, string type, int level, int speed, int HP)
+        : name(name), wild(wild), type(type), level(level), speed(speed), maxHP(HP), HP(HP), attackX(1) {}
 
     // wild=true attackX=1
     Mythikin(string name, string type, int level, int speed, int HP)
@@ -35,6 +36,9 @@ public:
 
     // Default constructor
     Mythikin() : name("Default-Munchikin"), wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
+
+    //NPC Mythikin
+    Mythikin(string name) : wild("false"), type("normal"), level(1), speed(50), maxHP(100), HP(100), attackX(1) {}
   
     //Copy Constructor
     Mythikin(const Mythikin& other) : name(other.name), wild(other.wild), type(other.type), level(other.level), speed(other.speed), maxHP(other.maxHP), HP(other.HP), attackX(other.attackX), attacks(other.attacks) {}
@@ -60,9 +64,11 @@ public:
     void setSpeed(int speed) { this->speed = speed; }
     void setMaxHP(int maxHP) { this->maxHP = maxHP; }
     void setHP(int HP) {
-        if(HP >= maxHP) { cerr << "set HP over max, set to max"; this->HP = maxHP; }    //HP set to high
+        if(HP >= maxHP) { this->HP = maxHP; }    //HP set too high
         else { this->HP = HP; } // HP set
     }
     void setAttackX(double attackX) { this->attackX = attackX; }
     void addAttack(const Attack& attack) { attacks.push_back(attack); }
 };
+
+extern map<string, Mythikin*> mythikins;
