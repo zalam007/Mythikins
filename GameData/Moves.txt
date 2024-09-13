@@ -1,0 +1,58 @@
+# Battle Item Format: Name;Type;Power;Accuracy;MM;
+
+# Normal
+Stomp;normal;10;85;10;
+Bite;normal;10;90;10;
+Cut;normal;10;95;10;
+Whisperwind;normal;15;90;10;
+SereneStrike;normal;20;85;10;
+RascalsRuse;normal;15;90;10;
+QuickPound;normal;12;95;15;
+TackleBlast;normal;18;90;12;
+EchoPulse;normal;25;85;8;
+GentleTap;normal;8;100;20;
+PowerWhack;normal;20;80;8;
+
+# Magma
+HoofSpark;magma;15;90;10;
+FlameCharge;magma;20;80;15;
+MagmaSmash;magma;25;75;10;
+Pyroquake;magma;30;70;5;
+FlareFlicker;magma;15;95;10;
+SootStrike;magma;20;85;10;
+EmberSpin;magma;15;90;10;
+ScorchingSwipe;magma;25;80;5;
+InfernoBurst;magma;30;75;5;
+LavaJet;magma;20;85;10;
+CharredClaw;magma;25;80;5;
+
+# Aqua
+Splash;aqua;5;100;20;
+Flood;aqua;30;70;5;
+TidalFang;aqua;25;85;10;
+Tsunami;aqua;35;75;5;
+HydroHose;aqua;20;90;10;
+Rippleclaw;aqua;15;95;10;
+AquaVortex;aqua;25;80;10;
+GlacialDive;aqua;30;75;5;
+OceanPulse;aqua;20;85;10;
+WaterGeyser;aqua;35;70;5;
+CoralCannon;aqua;25;80;10;
+
+# Flora
+RootSlap;flora;15;90;10;
+VineLash;flora;20;85;10;
+ThornSlash;flora;25;80;10;
+VerdantAbsorption;flora;10;100;10;
+PetalPrison;flora;20;85;5;
+RootRumble;flora;30;70;5;
+ShadowPetals;flora;15;90;10;
+Lunarbeam;flora;25;80;10;
+MoonlitBloom;flora;10;100;10;
+NightfallDance;flora;20;85;5;
+EclipseSurge;flora;30;75;5;
+LeafletBarrage;flora;20;90;10;
+BuddingBlast;flora;25;85;5;
+RootWrap;flora;15;95;10;
+LeafBlade;flora;30;80;5;
+BrambleStrike;flora;35;75;5;

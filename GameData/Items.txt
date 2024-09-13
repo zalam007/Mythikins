@@ -1,0 +1,10 @@
+# Battle Item Format: Name|Quantity|Capacity|Price|ItemPower;
+# Item Format: Name|Quantity|Capacity|Price;
+#
+
+Liquid Medallion|1|1|0;
+Soil Medallion|1|1|0;
+Ash Medallion|1|1|0;
+Mythidex|1|1|0;
+Potion|1|99|200.0|25.0;
+Mythicube|1|99|100.0|1;
