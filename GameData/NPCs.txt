@@ -1,0 +1,27 @@
+# Format: Name;Mythikin1,...;Dialouge,...;BattleItem1,...;Item1,...;Mythicoins;StartingLocationName;battler?
+# 
+# If you wish to not give an NPC an attribute simply skip it. EX: Name;;;;;;StartingLocationName;false
+
+# Oxvale NPCs
+Mom;Fernfox;Hello;;;100;Home;false;
+Professor Alder;;Hello;Mythicube;Mythidex;10000;Professor Alder's Lab;false;
+
+# The Gate of Sun and Shore gate guard
+Jexsee;;Just get out of here!;;;0;The Gate of Sun and Shore;false;
+
+#random battler
+Big Guy;Fernfox;LOSER!;;;1000;Arid Crescent;true;
+
+# Dunefall NPCs
+Ignatius Kael;Magmamane;Hmmph,You are tougher than you look! That's for sure.,...;Potion;;5000;Dunefall Academy;false;
+
+# Ojada NPCs
+Sylvaine Marrowood;Vinebeast;You are indeed balanced in power and mind.,...;Potion;;5000;Ojada Academy;false;
+
+# Avalora Bay NPCs
+Maris Tidecaller;Hyrdazor;You are indeed balanced in power and mind.,...;Potion;;5000;Avalora Bay Academy;false;
+
+# Mythic Masters
+Master Jax;Magmamane;You are indeed balanced in power and mind.,...;Potion,Potion;;0;Mythikin Tower;false;
+Master Dean;Hyrdazor;You are indeed balanced in power and mind.,...;Potion,Potion;;0;Mythikin Tower;false;
+Master Zane;Vinebeast;You are indeed balanced in power and mind.,...;Potion,Potion;;0;Mythikin Tower;false;

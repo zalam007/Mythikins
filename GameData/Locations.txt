@@ -1,0 +1,103 @@
+# Location Format: ;Location;Neighbor1,...;
+# Wild Location Format: w;Location;Neighbor1,...;Mythikin1,...;SpawnRate;
+# Mythicenter Format: mc;Location;Neighbor1,...;
+# Mythishop Format: ms;Location;Neighbor1,...;Item,...;
+#
+# Warning: do not write neighbors twice. Don't Ex: Oxvale;Home; & Home;Oxvale;
+# Make sure to create the location before linking it to another location
+
+# Oxvale sublocations +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;Home;;
+
+;Basement;Home;;
+
+;Professor Alder's Lab;;
+
+mc;Oxvale Mythicenter;;
+
+ms;Oxvale Mythishop;;Potion,Mythicube;
+
+# Starting Town
+;Oxvale;Professor Alder's Lab,Oxvale Mythicenter,Oxvale Mythishop,Home;;
+# ------------------------------------------------------------------------
+
+# Dunefall sublocations +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;Dunefall Academy;;
+
+mc;Dunefall Mythicenter;;
+
+ms;Dunefall Mythishop;;
+
+# Magma City
+;Dunefall;Dunefall Academy,Dunefall Mythicenter,Dunefall Mythishop;;
+# ------------------------------------------------------------------------
+
+# Ojada sublocations +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;Ojada Academy;;
+
+mc;Ojada Mythicenter;;
+
+ms;Ojada Mythishop;;;
+
+# Flora City
+;Ojada;Ojada Academy,Ojada Mythicenter,Ojada Mythishop;;
+# ---------------------------------------------------------------------------
+
+# Wild route Dunefall to Ojada
+w;Falcon Heights;Dunefall,Ojada;;50;
+
+# Avalora Bay sublocations ++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;Avalora Bay Academy;;
+
+mc;Avalora Bay Mythicenter;;
+
+ms;Avalora Bay Mythishop;;;
+
+# Aqua City
+;Avalora Bay;Avalora Bay Academy,Avalora Bay Mythicenter,Avalora Bay Mythishop;;
+# ---------------------------------------------------------------------------
+
+# Shoal Islands
+w;Ven David Island;Avalora Bay;;50;
+
+w;Ment Island;Avalora Bay;;50;
+
+w;Dogira Island;Avalora Bay;;50;
+
+# Los Solara sublocations +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;Mythikin Tower;;
+
+mc;Los Solara Mythicenter;;
+
+ms;Los Solara Mythishop;;;
+
+# Capital City
+;Los Solara;Mythikin Tower,Los Solara Mythicenter,Los Solara Mythishop;;
+# ---------------------------------------------------------------------------
+
+# Routes from Oxvale to other cities
+
+# Route Oxvale to Dunefall
+# Event Trigger: ProfAlderLabScene opens this location
+w;Arid Crescent;Dunefall;Cindercoon,Lavalimp,Ashvyrm,Emberscale,Charmeleap,Ignotusk,Pyroswoop,Furnix,Cragburn,Moltora,Vulkar;100;
+
+# Route Oxvale to Avalora Bay
+# Event Trigger: ProfAlderLabScene opens this location
+w;Santa Lilac Island;Avalora Bay;;50;
+
+# Route Oxvale to Ojada
+# Event Trigger: ProfAlderLabScene opens this location
+w;Arroyo Verde;Ojada;;50;
+
+# Transitional location from Oxvale to Vastblue Shore
+# Prevents player from going to Vastblue Shore before without 3 medallions
+;The Gate of Sun and Shore;Oxvale;;
+
+# Route Oxvale to Los Solara 
+# Only available through the Gate of Sun and Shore
+w;Vastblue Shore;Los Solara;;50;

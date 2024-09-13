@@ -36,6 +36,12 @@ class NPC : public Character {
     void setDialogue(const vector<string>& newDialogue) {dialogue = newDialogue;}
 
     void addDialogue(const string& newDialogue) {dialogue.push_back(newDialogue);}
+
+    void resetTeamHP() { // resets team HP
+      for(int i = 0; i < team.getSize(); i++) {
+        team.getSlot(i).setHP(team.getSlot(i).getMaxHP());
+      }
+    }
     
 };
 
